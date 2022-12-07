@@ -7,17 +7,18 @@ const Home = () => {
   return (
     <div
       name="home"
-      className="h-screen w-full bg-gradient-to-b from-emerald-50 via-emerald-50 to-emerald-100 "
+      className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800 "
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row pb-10">
-        <div className="flex flex-col justify-center h-full">
-          <h2 className="text-4xl sm:text-7xl font-bold text-black">
-            I'm a Full Stack Developer
+        <div className="flex flex-col justify-center h-full sm:ml-8">
+          <h2 className="text-4xl sm:text-7xl font-bold text-white">
+            Hi! I'm Salman Ajani.
           </h2>
-          <p className="text-black py-4 max-w-md text-xl">
-            I started slow but as of now I've become completely obsessed with
-            coding. Currently, I love to work on projects using technologies
-            like React, Next.js, Typescript, Tailwind, Node.js and MongoDB.
+          <h3 className="mt-5 text-3xl sm:text-4xl font-bold text-white">
+            And I like to code.
+          </h3>
+          <p className="text-white py-4 max-w-md text-xl">
+            Full Stack Developer
           </p>
 
           <div>
@@ -35,7 +36,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div>
+        <div className="border-2 rounded-2xl">
           <img
             src={HeroImage}
             alt="my profile"

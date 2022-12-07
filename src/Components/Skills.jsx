@@ -47,7 +47,7 @@ const Skills = () => {
       id: 6,
       src: nextjs,
       title: "Next JS",
-      style: "shadow-black",
+      style: "shadow-white",
     },
     {
       id: 7,
@@ -59,7 +59,7 @@ const Skills = () => {
       id: 8,
       src: github,
       title: "GitHub",
-      style: "shadow-black",
+      style: "shadow-white",
     },
     {
       id: 9,
@@ -78,11 +78,11 @@ const Skills = () => {
   return (
     <div
       name="skills"
-      className="bg-gradient-to-b from-emerald-50 via-emerald-50 to-emerald-100 w-full h-full py-40"
+      className="bg-gradient-to-b from-black to-gray-800 w-full h-full py-28"
     >
-      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-black">
+      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
         <div>
-          <p className="text-4xl font-bold border-b-4 border-black p-2 inline">
+          <p className="text-4xl font-bold border-b-4 border-white inline">
             Skills
           </p>
           <p className="py-6 font-bold">
@@ -96,7 +96,7 @@ const Skills = () => {
               key={id}
               className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style} bg-emerald-900 text-white`}
             >
-              <img src={src} alt="" className="w-20 mx-auto" />
+              <img src={src} alt="" className="w-20 mx-auto pt-3" />
               <p className="mt-4">{title}</p>
             </div>
           ))}
