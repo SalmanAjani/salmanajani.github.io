@@ -4,12 +4,21 @@ import html from "../assets/html.png";
 import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
 import reactImage from "../assets/react.png";
-import nextjs from "../assets/nextjs.png";
+import typescript from "../assets/typescript.png";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
+import redux from "../assets/redux.png";
+import jest from "../assets/jest.png";
+import postman from "../assets/postman.png";
 import node from "../assets/node.png";
-import typescript from "../assets/ts-logo-256.png";
-import mongo from "../assets/mongodb-240.png";
+import mongodb from "../assets/mongodb.png";
+import express from "../assets/express.png";
+import npm from "../assets/npm.png";
+import nextjs from "../assets/nextjs.png";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Skills = () => {
   const techs = [
@@ -35,68 +44,162 @@ const Skills = () => {
       id: 4,
       src: reactImage,
       title: "React",
-      style: "shadow-blue-600",
+      style: "shadow-cyan-500",
     },
     {
       id: 5,
+      src: redux,
+      title: "Redux",
+      style: "shadow-purple-600",
+    },
+    {
+      id: 6,
       src: tailwind,
       title: "Tailwind",
       style: "shadow-sky-400",
     },
     {
-      id: 6,
-      src: nextjs,
-      title: "Next JS",
-      style: "shadow-white",
-    },
-    {
       id: 7,
-      src: typescript,
-      title: "TypeScript",
-      style: "shadow-blue-600",
+      src: nextjs,
+      title: "NextJS",
+      style: "shadow-gray-400",
     },
+
     {
       id: 8,
-      src: github,
-      title: "GitHub",
-      style: "shadow-white",
+      src: typescript,
+      title: "Typescript",
+      style: "shadow-blue-400",
     },
+
     {
       id: 9,
-      src: node,
-      title: "NodeJS",
-      style: "shadow-green-600",
-    },
-    {
-      id: 10,
-      src: mongo,
-      title: "MongoDB",
-      style: "shadow-green-600",
+      src: jest,
+      title: "Jest",
+      style: "shadow-orange-400",
     },
   ];
+
+  const back = [
+    {
+      id: 10,
+      src: node,
+      title: "NodeJS",
+      style: "shadow-green-400",
+    },
+    {
+      id: 11,
+      src: express,
+      title: "Express",
+      style: "shadow-gray-400",
+    },
+    {
+      id: 12,
+      src: mongodb,
+      title: "Mongodb",
+      style: "shadow-green-400",
+    },
+  ];
+
+  const extra = [
+    {
+      id: 13,
+      src: github,
+      title: "GitHub",
+      style: "shadow-gray-400",
+    },
+    {
+      id: 14,
+      src: postman,
+      title: "PostMan",
+      style: "shadow-orange-400",
+    },
+    {
+      id: 15,
+      src: npm,
+      title: "NPM",
+      style: "shadow-red-400",
+    },
+  ];
+
+  useEffect(() => {
+    AOS.init({ delay: 200 });
+  }, []);
 
   return (
     <div
       name="skills"
-      className="bg-gradient-to-b from-black to-gray-800 w-full h-full py-28"
+      className="bg-gradient-to-b to-gray-900 from-black w-full py-40 pt-32"
     >
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
-        <div>
-          <p className="text-4xl font-bold border-b-4 border-white inline">
+        <div className="mx-auto">
+          <p
+            className="text-5xl font-bold border-b-4 border-white inline font-contact"
+            data-aos="fade-right"
+          >
             Skills
-          </p>
-          <p className="py-6 font-bold">
-            These are the technologies I currently know
           </p>
         </div>
 
-        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
+        <div className="mx-auto pt-16" data-aos="fade-up">
+          <h3 className="font-contact text-4xl text-emerald-600 border-b-2 border-emerald-600 inline">
+            FrontEnd
+          </h3>
+        </div>
+        <div className="w-10/12 mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-12 text-center py-8 px-4 sm:px-0">
           {techs.map(({ id, src, title, style }) => (
             <div
               key={id}
-              className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style} bg-emerald-900 text-white`}
+              className={`shadow-lg  duration-300 py-4 rounded-lg  ${style} hover:scale-110`}
+              data-aos="fade-up"
             >
-              <img src={src} alt="" className="w-20 mx-auto pt-3" />
+              <img
+                src={src}
+                alt=""
+                className="mx-auto xxs:w-16 xs:w-16 ss:w-20"
+              />
+              <p className="mt-4">{title}</p>
+            </div>
+          ))}
+        </div>
+
+        <div className="mx-auto pt-16" data-aos="fade-up">
+          <h3
+            className="font-contact text-4xl pt-20 text-emerald-600 border-b-2 border-emerald-600 inline"
+            data-aos="fade-up"
+          >
+            BackEnd
+          </h3>
+        </div>
+        <div className="w-11/12 mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-12 text-center py-8 px-4 sm:px-0">
+          {back.map(({ id, src, title, style }) => (
+            <div
+              key={id}
+              className={`shadow-lg  duration-300 py-8 rounded-lg  ${style} hover:scale-110`}
+              data-aos="fade-up"
+            >
+              <img src={src} alt="" className="w-20 mx-auto" />
+              <p className="mt-4">{title}</p>
+            </div>
+          ))}
+        </div>
+
+        <div className="mx-auto pt-16" data-aos="fade-up">
+          <h3
+            className="font-contact text-4xl pt-20 text-emerald-600 border-b-2 border-emerald-600 inline"
+            data-aos="fade-up"
+          >
+            Tools I Use
+          </h3>
+        </div>
+        <div className="w-11/12 mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-12 text-center py-8 px-4 sm:px-0">
+          {extra.map(({ id, src, title, style }) => (
+            <div
+              key={id}
+              className={`shadow-lg  duration-300 py-8 rounded-lg  ${style} hover:scale-110`}
+              data-aos="fade-up"
+            >
+              <img src={src} alt="" className="w-20 mx-auto" />
               <p className="mt-4">{title}</p>
             </div>
           ))}

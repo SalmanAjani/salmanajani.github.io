@@ -31,18 +31,24 @@ const NavBar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-emerald-900 fixed">
+    <div className="max-w-screen mx-auto flex justify-between items-center w-full h-20 px-20 py-1 text-white bg-emerald-900 fixed z-20 font-contact">
       <div>
-        <h1 className="text-5xl font-signature ml-2 pt-2 font-bold">Salman</h1>
+        <h1 className="text-5xl font-signature pt-2">Salman</h1>
       </div>
 
-      <ul className="hidden md:flex">
-        {links.map(({ id, link }) => (
+      <ul className="hidden sm:flex">
+        {links.map(({ id, link, href }) => (
           <li
             key={id}
-            className="px-4 cursor-pointer capitalize font-bold text-white hover:scale-105 duration-200"
+            className="px-4 cursor-pointer capitalize text-[18px] text-white hover:scale-105 duration-200 hover:text-emerald-500"
           >
-            <Link to={link} smooth duration={500}>
+            <Link
+              to={link}
+              href={href}
+              smooth
+              duration={500}
+              className="hover:underline underline-offset-8"
+            >
               {link}
             </Link>
           </li>
@@ -51,7 +57,7 @@ const NavBar = () => {
 
       <div
         onClick={() => setNav(!nav)}
-        className="cursor-pointer pr-4 z-10 text-white md:hidden sm:pl-80"
+        className="cursor-pointer pr-4 z-10 text-white md:hidden xs:pl-60 ss:pl-80 sm:hidden"
       >
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
@@ -75,12 +81,6 @@ const NavBar = () => {
           ))}
         </ul>
       )}
-      <a
-        href="https://drive.google.com/u/0/uc?id=1We9ytnoF1n0U6Is59-933y8CUCnQTWCE&export=download"
-        className="border-2 py-2 px-2"
-      >
-        Resume
-      </a>
     </div>
   );
 };

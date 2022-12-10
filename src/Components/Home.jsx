@@ -1,48 +1,65 @@
 import React from "react";
 import HeroImage from "../assets/heroImage.png";
-import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-import { Link } from "react-scroll";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Home = () => {
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 500,
+      easing: "ease-in-quad",
+      delay: 100,
+    });
+  }, []);
+
   return (
     <div
       name="home"
-      className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800 "
+      className="max-w-screen md:w-full mx-auto py-20 lg:py-40 bg-gradient-to-b from-black via-black to-gray-900 font-contact"
     >
-      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row pb-10">
-        <div className="flex flex-col justify-center h-full sm:ml-8">
-          <h2 className="text-4xl sm:text-7xl font-bold text-white">
-            Hi! I'm Salman Ajani.
+      <div className="max-w-screen md:max-w-screen-md mx-auto grid lg:grid-cols-2 items-center">
+        <div
+          className="px-8 py-12 max-w-lg mx-auto sm:max-w-xl lg:px-12 lg:py-24 lg:max-w-full"
+          data-aos="fade-right"
+        >
+          <h2 className="text-3xl sm:text-5xl font-bold text-white my-3 ss:text-4xl xs:text-4xl">
+            Hi!
           </h2>
-          <h3 className="mt-5 text-3xl sm:text-4xl font-bold text-white">
+          <h2 className="text-3xl sm:text-5xl font-bold text-emerald-800 my-3 ss:text-4xl xs:text-4xl">
+            I'm Salman Ajani.
+          </h2>
+          <h2 className="text-3xl sm:text-5xl font-bold text-white my-3 ss:text-4xl xs:text-4xl">
             And I like to code.
-          </h3>
-          <p className="text-white py-4 max-w-md text-xl">
-            Full Stack Developer
+          </h2>
+          <p className="text-gray-500 text-xl py-4 font-medium max-w-screen-sm">
+            A Full Stack Developer
           </p>
 
-          <div>
-            <Link
-              to="projects"
-              smooth
-              duration={500}
-              className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-emerald-900 to-emerald-600 cursor-pointer"
+          <div className="max-w-screen-lg mx-auto ">
+            <div
+              // className="max-w-screen-sm flex justify-center items-center space-x-8"
+              data-aos="fade-up"
             >
-              Projects
-              <span className="group-hover:rotate-90 duration-300">
-                <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
-              </span>
-            </Link>
+              <div>
+                <a
+                  href="https://drive.google.com/u/0/uc?id=1We9ytnoF1n0U6Is59-933y8CUCnQTWCE&export=download"
+                  smooth
+                  className="group text-white w-fit px-6 py-2 my-2 text-[20px] overflow-hidden flex items-center rounded-md bg-gradient-to-r from-emerald-700 to-emerald-900 cursor-pointer mx-auto"
+                >
+                  Resume
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-
-        <div className="border-2 rounded-2xl">
-          <img
-            src={HeroImage}
-            alt="my profile"
-            className="rounded-2xl mx-auto w-2/3 md:w-full "
-          />
-        </div>
+        <img
+          className="mx-auto rounded-2xl w-4/12 object-cover object-center xxs:w-6/12 xs:w-5/12 sm:w-4/12 md:w-3/12 lg:w-6/12 border-2 border-white "
+          src={HeroImage}
+          alt="logo"
+          data-aos="fade-left"
+        />
       </div>
     </div>
   );
