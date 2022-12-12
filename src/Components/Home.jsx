@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from "react";
 import HeroImage from "../assets/heroImage.png";
 import AOS from "aos";
@@ -45,7 +46,8 @@ const Home = () => {
             >
               <div>
                 <a
-                  href="https://drive.google.com/u/0/uc?id=1We9ytnoF1n0U6Is59-933y8CUCnQTWCE&export=download"
+                  href="https://drive.google.com/file/d/1We9ytnoF1n0U6Is59-933y8CUCnQTWCE/view?usp=sharing"
+                  target="_blank"
                   smooth
                   className="group text-white w-fit px-6 py-2 my-2 text-[20px] overflow-hidden flex items-center rounded-md bg-gradient-to-r from-emerald-700 to-emerald-900 cursor-pointer mx-auto"
                 >
