@@ -5,17 +5,26 @@ import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import Projects from "./components/Projects.jsx";
 import SocialLinks from "./components/SocialLinks";
+import useReady from "./components/useReady";
+import LoadingPage from "./components/LoadingPage";
 
 function App() {
+  const { ready } = useReady(2700);
   return (
     <div>
-      <NavBar />
-      <Home />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
-      <SocialLinks />
+      {ready !== true ? (
+        <LoadingPage />
+      ) : (
+        <div>
+          <NavBar />
+          <Home />
+          <About />
+          <Skills />
+          <Projects />
+          <Contact />
+          <SocialLinks />
+        </div>
+      )}
     </div>
   );
 }

@@ -48,21 +48,25 @@ const About = () => {
           />
           <div className="md:mx-auto">
             <p
-              className="mt-12 md:mt-12 text-2xl  text-gray-600 "
+              className="mt-6 md:mt-4 text-xl  text-gray-500 "
               data-aos="fade-down"
             >
-              I am Result-oriented full-stack web developer, passionate about
-              developing user-friendly web applications using MERN Stack.
+              I got introduced to coding pretty late comparatively. It was
+              always something I wanted to learn but having graduated with a
+              Bachelor's degree in Business Administration it made sense to just
+              continue on in that field. Hence the idea of learning to code just
+              got pushed back. But when COVID hit, and the world came to a stop,
+              I finally got the chance I wanted.
             </p>
 
-            <p className="mt-6 text-2xl  text-gray-600 " data-aos="fade-left">
-              I enjoy developing websites and a keen interest in solving
-              problems and coming up with effective solutions.
-            </p>
-
-            <p className="mt-6 text-2xl  text-gray-600 " data-aos="fade-up">
-              Eager to be a part of a team which gives me ability to learn and
-              grow.
+            <p className="mt-6 text-xl  text-gray-500 " data-aos="fade-left">
+              I joined the coding bootcamp for Full Stack Web Development at
+              Masai School and started learning. I learned all the basics and
+              then started making my own websites. I worked on different
+              collaborative projects with fellow batchmates and even learned
+              Data Structures and Algorithms. Everything you see in the projects
+              section is what I've build/worked on from scratch in the past 8
+              months.
             </p>
           </div>
         </div>

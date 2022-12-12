@@ -5,8 +5,11 @@ import GitHubCalendar from "react-github-calendar";
 function Github() {
   return (
     <div>
-      <h1 className="project-heading" style={{ paddingBottom: "20px" }}>
-        Days I <strong className="purple">Code</strong>
+      <h1
+        className="project-heading"
+        style={{ paddingBottom: "20px", color: "rgb(5 150 105)" }}
+      >
+        GitHub Calender
       </h1>
       <div>
         <GitHubCalendar

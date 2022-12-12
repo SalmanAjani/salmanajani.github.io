@@ -13,8 +13,9 @@ import postman from "../assets/postman.png";
 import node from "../assets/node.png";
 import mongodb from "../assets/mongodb.png";
 import express from "../assets/express.png";
-import npm from "../assets/npm.png";
+// import npm from "../assets/npm.png";
 import nextjs from "../assets/nextjs.png";
+import cypress from "../assets/cypress.png";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -116,9 +117,9 @@ const Skills = () => {
     },
     {
       id: 15,
-      src: npm,
-      title: "NPM",
-      style: "shadow-red-400",
+      src: cypress,
+      title: "Cypress",
+      style: "shadow-gray-400",
     },
   ];
 
@@ -146,11 +147,11 @@ const Skills = () => {
             FrontEnd
           </h3>
         </div>
-        <div className="w-10/12 mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-12 text-center py-8 px-4 sm:px-0">
+        <div className="w-10/12 mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-12 text-center pb-8 pt-10 px-4 sm:px-0">
           {techs.map(({ id, src, title, style }) => (
             <div
               key={id}
-              className={`shadow-lg  duration-300 py-4 rounded-lg  ${style} hover:scale-110`}
+              className={`shadow-lg  duration-300 py-4 rounded-lg  ${style} hover:scale-110 rounded-full`}
               data-aos="fade-up"
             >
               <img
@@ -171,14 +172,18 @@ const Skills = () => {
             BackEnd
           </h3>
         </div>
-        <div className="w-11/12 mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-12 text-center py-8 px-4 sm:px-0">
+        <div className="w-10/12 mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-12 text-center pb-8 pt-10 px-4 sm:px-0">
           {back.map(({ id, src, title, style }) => (
             <div
               key={id}
-              className={`shadow-lg  duration-300 py-8 rounded-lg  ${style} hover:scale-110`}
+              className={`shadow-lg  duration-300 py-4 rounded-lg  ${style} hover:scale-110 rounded-full`}
               data-aos="fade-up"
             >
-              <img src={src} alt="" className="w-20 mx-auto" />
+              <img
+                src={src}
+                alt=""
+                className="mx-auto xxs:w-16 xs:w-16 ss:w-20"
+              />
               <p className="mt-4">{title}</p>
             </div>
           ))}
@@ -192,14 +197,18 @@ const Skills = () => {
             Tools I Use
           </h3>
         </div>
-        <div className="w-11/12 mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-12 text-center py-8 px-4 sm:px-0">
+        <div className="w-10/12 mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-12 text-center pb-8 pt-10 px-4 sm:px-0">
           {extra.map(({ id, src, title, style }) => (
             <div
               key={id}
-              className={`shadow-lg  duration-300 py-8 rounded-lg  ${style} hover:scale-110`}
+              className={`shadow-lg  duration-300 py-4 rounded-lg  ${style} hover:scale-110 rounded-full`}
               data-aos="fade-up"
             >
-              <img src={src} alt="" className="w-20 mx-auto" />
+              <img
+                src={src}
+                alt=""
+                className="mx-auto xxs:w-16 xs:w-16 ss:w-20"
+              />
               <p className="mt-4">{title}</p>
             </div>
           ))}

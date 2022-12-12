@@ -16,6 +16,7 @@ import {
   SiRedux,
 } from "react-icons/si";
 import ImageSlider from "./ImageSlider";
+import Github from "./github";
 
 const Projects = () => {
   useEffect(() => {
@@ -156,45 +157,59 @@ const Projects = () => {
         </div>
 
         {/* Section 2 */}
-        <div className="mx-auto pt-20 pb-8" data-aos="fade-up">
-          <h3 className="font-contact text-4xl text-emerald-600 border-b-2 border-emerald-600 inline">
-            Other Noteworthy Projects
-          </h3>
-        </div>
+        <div className=" max-w-screen-lg mx-auto text-center">
+          <div className="pt-20 pb-8" data-aos="fade-up">
+            <h3 className="font-contact sm:text-4xl text-emerald-600 border-b-2 border-emerald-600 inline xxs:text-2xl xs:text-2xl">
+              Other Noteworthy Projects
+            </h3>
+          </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0 pt-6">
-          {noteworthy.map(({ id, src, deployed, github }) => (
-            <div
-              key={id}
-              className="shadow-md shadow-gray-600 rounded-lg  text-white"
-            >
-              <img
-                src={src}
-                alt=""
-                className="rounded-md duration-200 hover:scale-105"
-              />
-              <div className="text-center pt-4">
-                <h3 className="text-white text-[20px]">TailwindCSS</h3>
-                <p className="w-8/12 mx-auto text-gray-600">
-                  Basically my own version of apple website but in dark.
-                </p>
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0 pt-6 xs:grid-cols-1 xxs:grid-cols-1 xs:mx-6">
+            {noteworthy.map(({ id, src, deployed, github }) => (
+              <div
+                key={id}
+                className="shadow-md shadow-gray-600 rounded-lg  text-white"
+              >
+                <img
+                  src={src}
+                  alt=""
+                  className="rounded-md duration-200 hover:scale-105"
+                />
+                <div className="text-center pt-4">
+                  <h3 className="text-white text-[20px] pb-2">AppleDark</h3>
+                  <p className="w-8/12 mx-auto text-gray-600">
+                    Basically my own version of apple website but in dark.
+                  </p>
+                </div>
+                <div className="flex items-center justify-center">
+                  <button
+                    className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-emerald-600 hover:bg-orange-500 hover:text-black hover:rounded-2xl"
+                    onClick={() => window.open(deployed)}
+                  >
+                    Deployed
+                  </button>
+                  <button
+                    className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-emerald-600 hover:bg-orange-500 hover:text-black hover:rounded-2xl"
+                    onClick={() => window.open(github)}
+                  >
+                    Github
+                  </button>
+                </div>
               </div>
-              <div className="flex items-center justify-center">
-                <button
-                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-emerald-600"
-                  onClick={() => window.open(deployed)}
-                >
-                  Deployed
-                </button>
-                <button
-                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-emerald-600"
-                  onClick={() => window.open(github)}
-                >
-                  Github
-                </button>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
+        </div>
+        <div className="max-w-screen-md mx-auto p-2 text-center mt-32 text-2xl text-white">
+          <Github />
+        </div>
+        <div className="mx-auto">
+          <h3 className="text-center text-2xl pt-12 pb-4 text-emerald-600">
+            Github Stats
+          </h3>
+          <img
+            src="https://github-readme-stats.vercel.app/api?username=SalmanAjani&show_icons=true"
+            alt="github"
+          />
         </div>
       </div>
     </div>

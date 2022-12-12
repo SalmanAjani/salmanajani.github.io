@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <div
       name="home"
-      className="max-w-screen md:w-full mx-auto py-20 lg:py-40 bg-gradient-to-b from-black via-black to-gray-900 font-contact"
+      className="max-w-screen md:w-full mx-auto pt-20 lg:pt-40 pb-2 bg-gradient-to-b from-black via-black to-gray-900 font-contact"
     >
       <div className="max-w-screen md:max-w-screen-md mx-auto grid lg:grid-cols-2 items-center">
         <div
@@ -34,7 +34,8 @@ const Home = () => {
             And I like to code.
           </h2>
           <p className="text-gray-500 text-xl py-4 font-medium max-w-screen-sm">
-            A Full Stack Developer
+            An Aspiring Full Stack Developer looking to build quality products
+            by working in a fast-paced environment.
           </p>
 
           <div className="max-w-screen-lg mx-auto ">
@@ -48,7 +49,7 @@ const Home = () => {
                   smooth
                   className="group text-white w-fit px-6 py-2 my-2 text-[20px] overflow-hidden flex items-center rounded-md bg-gradient-to-r from-emerald-700 to-emerald-900 cursor-pointer mx-auto"
                 >
-                  Resume
+                  Check Out My Resume
                 </a>
               </div>
             </div>
