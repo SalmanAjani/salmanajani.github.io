@@ -20,6 +20,15 @@ import cypress from "../assets/cypress.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+import "./styles.css";
+
+import { Navigation } from "swiper";
 
 const Skills = () => {
   const techs = [
@@ -130,88 +139,145 @@ const Skills = () => {
   return (
     <div
       name="skills"
-      className="bg-gradient-to-b to-gray-900 from-black w-full py-40 pt-32"
+      className="bg-gradient-to-b to-emerald-400 from-emerald-300 w-full py-40 pt-32"
     >
-      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
+      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-emerald-900">
         <div className="mx-auto">
           <p
-            className="text-5xl font-bold border-b-4 border-white inline font-contact"
+            className="text-5xl font-bold border-b-4 border-emerald-900 inline font-contact"
             data-aos="fade-right"
           >
             Skills
           </p>
         </div>
 
-        <div className="mx-auto pt-16" data-aos="fade-up">
-          <h3 className="font-contact text-4xl text-emerald-600 border-b-2 border-emerald-600 inline">
+        <div className="mx-auto pt-20 mb-10" data-aos="fade-up">
+          <h3 className="font-contact text-4xl text-black border-b-2 border-black inline">
             FrontEnd
           </h3>
         </div>
-        <div className="w-10/12 mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-12 text-center pb-8 pt-10 px-4 sm:px-0">
-          {techs.map(({ id, src, title, style }) => (
-            <div
-              key={id}
-              className={`shadow-lg  duration-300 py-4 rounded-lg  ${style} hover:scale-110 rounded-full`}
-              data-aos="fade-up"
-            >
-              <img
-                src={src}
-                alt=""
-                className="mx-auto xxs:w-16 xs:w-16 ss:w-20"
-              />
-              <p className="mt-4">{title}</p>
-            </div>
-          ))}
+        <div className="text-white">
+          <Swiper
+            slidesPerView={1}
+            spaceBetween={10}
+            navigation={true}
+            loop={true}
+            breakpoints={{
+              "@0.00": {
+                slidesPerView: 1,
+                spaceBetween: 10,
+              },
+              "@0.75": {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              "@1.00": {
+                slidesPerView: 3,
+                spaceBetween: 40,
+              },
+              "@1.50": {
+                slidesPerView: 4,
+                spaceBetween: 50,
+              },
+            }}
+            modules={[Navigation]}
+            className="mySwiper"
+          >
+            {techs.map(({ id, src, title }) => (
+              <SwiperSlide>
+                <div key={id}>
+                  <img src={src} alt={title} />
+                  <p className="mt-4">{title}</p>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
 
-        <div className="mx-auto pt-16" data-aos="fade-up">
-          <h3
-            className="font-contact text-4xl pt-20 text-emerald-600 border-b-2 border-emerald-600 inline"
-            data-aos="fade-up"
-          >
+        <div className="mx-auto pt-20 mb-10" data-aos="fade-up">
+          <h3 className="font-contact text-4xl text-black border-b-2 border-black inline">
             BackEnd
           </h3>
         </div>
-        <div className="w-10/12 mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-12 text-center pb-8 pt-10 px-4 sm:px-0">
-          {back.map(({ id, src, title, style }) => (
-            <div
-              key={id}
-              className={`shadow-lg  duration-300 py-4 rounded-lg  ${style} hover:scale-110 rounded-full`}
-              data-aos="fade-up"
-            >
-              <img
-                src={src}
-                alt=""
-                className="mx-auto xxs:w-16 xs:w-16 ss:w-20"
-              />
-              <p className="mt-4">{title}</p>
-            </div>
-          ))}
+        <div className="text-white">
+          <Swiper
+            slidesPerView={1}
+            spaceBetween={10}
+            navigation={true}
+            loop={true}
+            breakpoints={{
+              "@0.00": {
+                slidesPerView: 1,
+                spaceBetween: 10,
+              },
+              "@0.75": {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              "@1.00": {
+                slidesPerView: 3,
+                spaceBetween: 40,
+              },
+              "@1.50": {
+                slidesPerView: 3,
+                spaceBetween: 50,
+              },
+            }}
+            modules={[Navigation]}
+            className="mySwiper"
+          >
+            {back.map(({ id, src, title }) => (
+              <SwiperSlide>
+                <div key={id}>
+                  <img src={src} alt={title} />
+                  <p className="mt-4">{title}</p>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
 
-        <div className="mx-auto pt-16" data-aos="fade-up">
-          <h3
-            className="font-contact text-4xl pt-20 text-emerald-600 border-b-2 border-emerald-600 inline"
-            data-aos="fade-up"
-          >
+        <div className="mx-auto pt-20 mb-10" data-aos="fade-up">
+          <h3 className="font-contact text-4xl text-black border-b-2 border-black inline">
             Tools I Use
           </h3>
         </div>
-        <div className="w-10/12 mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-12 text-center pb-8 pt-10 px-4 sm:px-0">
-          {extra.map(({ id, src, title, style }) => (
-            <div
-              key={id}
-              className={`shadow-lg  duration-300 py-4 rounded-lg  ${style} hover:scale-110 rounded-full`}
-              data-aos="fade-up"
-            >
-              <img
-                src={src}
-                alt=""
-                className="mx-auto xxs:w-16 xs:w-16 ss:w-20"
-              />
-              <p className="mt-4">{title}</p>
-            </div>
-          ))}
+        <div className="text-white">
+          <Swiper
+            slidesPerView={1}
+            spaceBetween={10}
+            navigation={true}
+            loop={true}
+            breakpoints={{
+              "@0.00": {
+                slidesPerView: 1,
+                spaceBetween: 10,
+              },
+              "@0.75": {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              "@1.00": {
+                slidesPerView: 3,
+                spaceBetween: 40,
+              },
+              "@1.50": {
+                slidesPerView: 3,
+                spaceBetween: 50,
+              },
+            }}
+            modules={[Navigation]}
+            className="mySwiper"
+          >
+            {extra.map(({ id, src, title }) => (
+              <SwiperSlide>
+                <div key={id}>
+                  <img src={src} alt={title} />
+                  <p className="mt-4">{title}</p>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
     </div>

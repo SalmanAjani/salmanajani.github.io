@@ -7,7 +7,7 @@ function Github() {
     <div>
       <h1
         className="project-heading"
-        style={{ paddingBottom: "20px", color: "rgb(5 150 105)" }}
+        style={{ paddingBottom: "20px", color: "#064e3b" }}
       >
         GitHub Calender
       </h1>
@@ -16,7 +16,7 @@ function Github() {
           username="SalmanAjani"
           blockSize={15}
           blockMargin={5}
-          fontSize={16}
+          fontSize={20}
         />
       </div>
     </div>

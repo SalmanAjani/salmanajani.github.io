@@ -9,7 +9,7 @@ const SocialLinks = () => {
       id: 1,
       child: (
         <>
-          LinkedIn <FaLinkedin size={30} />
+          <FaLinkedin size={30} /> LinkedIn
         </>
       ),
       href: "https://www.linkedin.com/in/salmanajani26/",
@@ -19,7 +19,7 @@ const SocialLinks = () => {
       id: 2,
       child: (
         <>
-          GitHub <FaGithub size={30} />
+          <FaGithub size={30} /> GitHub
         </>
       ),
       href: "https://github.com/SalmanAjani",
@@ -28,7 +28,7 @@ const SocialLinks = () => {
       id: 3,
       child: (
         <>
-          Mail <HiOutlineMail size={30} />
+          <HiOutlineMail size={30} /> Mail
         </>
       ),
       href: "mailto:salmanajani0426@gmail.com",
@@ -37,30 +37,29 @@ const SocialLinks = () => {
       id: 4,
       child: (
         <>
-          Resume <BsFillPersonLinesFill size={30} />
+          <BsFillPersonLinesFill size={30} /> Resume
         </>
       ),
       href: "https://drive.google.com/file/d/1We9ytnoF1n0U6Is59-933y8CUCnQTWCE/view?usp=sharing",
       style: "rounded-br-md",
-      download: true,
     },
   ];
 
   return (
-    <div className="hidden lg:flex flex-col top-[35%] left-0 fixed">
+    <div className="hidden lg:flex flex-col top-[35%] right-0 fixed">
       <ul>
         {links.map(({ id, child, href, style }) => (
           <li
             key={id}
             className={
-              "flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 bg-emerald-900" +
+              "flex justify-between items-center w-40 h-14 px-4 mr-[-100px] hover:mr-[-10px] hover:rounded-md duration-300 bg-emerald-900" +
               " " +
               style
             }
           >
             <a
               href={href}
-              className="flex justify-between items-center w-full text-white"
+              className="flex justify-between items-center w-full text-white pr-3"
               target="_blank"
               rel="noreferrer"
             >
