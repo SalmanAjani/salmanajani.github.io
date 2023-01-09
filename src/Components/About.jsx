@@ -25,7 +25,7 @@ const About = () => {
         {/* Left */}
         <div
           className="mt-12 bg-gradient-to-b from-gray-900 to-gray-800 dark:bg-gradient-to-b dark:from-white dark:to-gray-300 rounded-[80px] mx-8 shadow-md shadow-rose-500"
-          data-aos="fade-right"
+          data-aos="fade-down"
         >
           <img
             src={dots}
@@ -38,7 +38,7 @@ const About = () => {
         </div>
 
         {/* Right */}
-        <div className="mx-10 md:mx-24 md:w-3/6" data-aos="fade-left">
+        <div className="mx-10 md:mx-24 md:w-3/6" data-aos="fade-down">
           <h2 className="font-extrabold text-2xl text-center mb-6 text-rose-500">
             ABOUT ME
           </h2>

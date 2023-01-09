@@ -104,7 +104,7 @@ const Skills = () => {
       className="max-w-screen pt-4 md:pt-20 pb-20 md:pb-24 bg-white dark:bg-gray-900 flex flex-col-reverse items-center font-contact md:flex-row md:justify-evenly md:px-24 md:gap-x-12 xl:px-64"
     >
       {/* Left Side */}
-      <div className="mt-16 w-8/12 lg:w-6/12" data-aos="fade-right">
+      <div className="mt-16 w-8/12 lg:w-6/12" data-aos="fade-down">
         <h2 className="text-2xl text-rose-500 mb-8 font-extrabold text-center md:text-left">
           EDUCATION
         </h2>
@@ -133,7 +133,7 @@ const Skills = () => {
       </div>
 
       {/* Right Side */}
-      <div data-aos="fade-left">
+      <div data-aos="fade-down">
         <h2 className="text-2xl text-center text-rose-500 mb-8 font-extrabold">
           SKILLS
         </h2>

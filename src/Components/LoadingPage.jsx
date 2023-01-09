@@ -16,7 +16,7 @@ const LoadingPage = () => {
           alt=""
           data-aos="fade-down"
         />
-        <div className="m-auto" data-aos="fade-up">
+        <div className="m-auto" data-aos="fade-down">
           <h1 className="text-5xl text-white font-contact ml-2 capitalize">
             Salman Ajani
           </h1>

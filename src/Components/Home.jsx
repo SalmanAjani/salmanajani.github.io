@@ -20,13 +20,13 @@ const Home = () => {
       {/* Intro */}
       <div
         className="text-4xl md:text-5xl mt-6 font-extrabold leading-tight pr-[28vw]"
-        data-aos="fade-right"
+        data-aos="fade-down"
       >
         <h2>Hi!</h2>
         <div className="text-rose-500">
           <Typewriter
             options={{
-              strings: ["I'm Salman Ajani.", "A Full Stack Developer."],
+              strings: ["I'm Salman Ajani"],
               autoStart: true,
               loop: true,
               deleteSpeed: 50,
@@ -47,7 +47,7 @@ const Home = () => {
       {/* Intro-2 */}
       <div
         className="rounded-md p-6 xxs:w-3/3 xs:w-2/3 sm:w-6/12 lg:w-1/3 bg-rose-500 text-white text-center ml-[32vw] relative -mt-[4vh] md:ml-[42vw] text-md sm:text-xl"
-        data-aos="fade-left"
+        data-aos="fade-down"
       >
         <h2>
           An Aspiring Full Stack Developer looking to build quality products by
