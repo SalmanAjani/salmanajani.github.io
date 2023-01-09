@@ -4,6 +4,7 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
+import Toggle from "./toggle";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -32,16 +33,20 @@ const NavBar = () => {
   ];
 
   return (
-    <div className="max-w-screen mx-auto flex justify-between items-center w-full h-20 px-20 py-1 text-white bg-emerald-900 fixed z-20 font-contact">
-      <ul className="hidden sm:flex">
-        {links.map(({ id, link, href }) => (
+    <div className="flex justify-between items-center bg-white h-20 fixed z-20 font-contact text-[18px] w-screen px-12 dark:bg-gray-900 dark:text-white">
+      <div>
+        <Toggle />
+      </div>
+
+      {/* Navbar */}
+      <ul className="hidden md:flex">
+        {links.map(({ id, link }) => (
           <li
             key={id}
-            className="cursor-pointer capitalize text-[18px] text-emerald-200 hover:scale-105 duration-200 hover:text-emerald-500 border-2 border-emerald-200 p-4"
+            className="cursor-pointer capitalize text-gray-900 hover:scale-105 duration-200 p-4 dark:text-white"
           >
             <Link
               to={link}
-              href={href}
               smooth
               duration={500}
               className="hover:underline underline-offset-8"
@@ -54,15 +59,19 @@ const NavBar = () => {
 
       <div
         onClick={() => setNav(!nav)}
-        className="cursor-pointer z-10 text-white sm:hidden"
+        className="cursor-pointer z-10 text-gray-900 md:hidden dark:text-white"
       >
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
 
+      {/* Hamburger Section */}
       {nav && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-emerald-900 to-emerald-700 text-emerald-200">
+        <ul className="flex flex-col items-center absolute top-0 left-0 w-screen h-screen justify-center bg-white text-gray-900 dark:bg-gray-900 dark:text-white">
           {links.map(({ id, link }) => (
-            <li key={id} className="cursor-pointer capitalize py-6 text-4xl">
+            <li
+              key={id}
+              className="cursor-pointer capitalize py-6 text-4xl hover:text-white hover:bg-gray-900 hover:rounded-xl px-6 dark:hover:bg-white dark:hover:text-gray-900"
+            >
               <Link
                 onClick={() => setNav(!nav)}
                 to={link}
@@ -73,6 +82,17 @@ const NavBar = () => {
               </Link>
             </li>
           ))}
+          <p
+            className="text-4xl py-6 cursor-pointer hover:text-white hover:bg-gray-900 hover:rounded-xl px-6 dark:hover:bg-white dark:hover:text-gray-900"
+            onClick={() =>
+              window.open(
+                "https://drive.google.com/file/d/1We9ytnoF1n0U6Is59-933y8CUCnQTWCE/view?usp=sharing",
+                "_blank"
+              )
+            }
+          >
+            Resume
+          </p>
         </ul>
       )}
 
@@ -80,7 +100,7 @@ const NavBar = () => {
         href="https://drive.google.com/file/d/1We9ytnoF1n0U6Is59-933y8CUCnQTWCE/view?usp=sharing"
         target="_blank"
         smooth
-        className="text-[18px] border-2 text-emerald-200 border-emerald-200 p-4 hover:scale-105 duration-200 hover:text-emerald-500"
+        className="text-white py-2 px-4 hover:scale-105 duration-200 bg-gray-900 border rounded-xl hidden md:flex dark:text-gray-900 dark:bg-white"
       >
         Resume
       </a>

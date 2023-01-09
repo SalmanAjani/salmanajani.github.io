@@ -9,17 +9,16 @@ const SocialLinks = () => {
       id: 1,
       child: (
         <>
-          <FaLinkedin size={30} /> LinkedIn
+          LinkedIn <FaLinkedin size={30} />
         </>
       ),
       href: "https://www.linkedin.com/in/salmanajani26/",
-      style: "rounded-tr-md",
     },
     {
       id: 2,
       child: (
         <>
-          <FaGithub size={30} /> GitHub
+          GitHub <FaGithub size={30} />
         </>
       ),
       href: "https://github.com/SalmanAjani",
@@ -28,7 +27,7 @@ const SocialLinks = () => {
       id: 3,
       child: (
         <>
-          <HiOutlineMail size={30} /> Mail
+          Mail <HiOutlineMail size={30} />
         </>
       ),
       href: "mailto:salmanajani0426@gmail.com",
@@ -37,29 +36,26 @@ const SocialLinks = () => {
       id: 4,
       child: (
         <>
-          <BsFillPersonLinesFill size={30} /> Resume
+          Resume <BsFillPersonLinesFill size={30} />
         </>
       ),
       href: "https://drive.google.com/file/d/1We9ytnoF1n0U6Is59-933y8CUCnQTWCE/view?usp=sharing",
-      style: "rounded-br-md",
     },
   ];
 
   return (
-    <div className="hidden lg:flex flex-col top-[35%] right-0 fixed">
+    <div className="hidden lg:flex flex-col top-[40%] left-0 fixed">
       <ul>
-        {links.map(({ id, child, href, style }) => (
+        {links.map(({ id, child, href }) => (
           <li
             key={id}
             className={
-              "flex justify-between items-center w-40 h-14 px-4 mr-[-100px] hover:mr-[-10px] hover:rounded-md duration-300 bg-emerald-900" +
-              " " +
-              style
+              "flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] duration-300 border-b-2 border-white dark:border-gray-900 text-white bg-gray-900 dark:text-gray-900 dark:bg-white"
             }
           >
             <a
               href={href}
-              className="flex justify-between items-center w-full text-white pr-3"
+              className="flex justify-between items-center w-full"
               target="_blank"
               rel="noreferrer"
             >

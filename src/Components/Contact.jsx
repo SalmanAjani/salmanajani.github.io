@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 import { FcPhone } from "react-icons/fc";
 import { SiGmail } from "react-icons/si";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaDownload } from "react-icons/fa";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -16,94 +16,123 @@ const Contact = () => {
     <>
       <div
         name="contact"
-        className="w-full  bg-gradient-to-b from-emerald-300 to-emerald-400 p-4 text-emerald-900 pt-28 pb-40"
+        id="contact"
+        className="max-w-screen px-12 bg-white dark:bg-gray-900 font-contact pt-4 md:pt-20 pb-20 md:pb-24 xl:px-64"
       >
-        <div
-          className="max-w-screen-lg mx-auto mb-16 text-center"
-          data-aos="fade-right"
-        >
-          <p className="text-4xl font-bold inline border-b-4 border-emerald-900 font-contact">
-            Contact
-          </p>
+        {/* Heading */}
+        <div className="text-center mb-12" data-aos="fade-down">
+          <h2 className="text-2xl font-extrabold text-rose-500">CONTACT</h2>
         </div>
-        <div className="max-w-screen-lg  mx-auto">
-          <div className="grid sm:grid-cols-2 gap-6 xxs:grid-cols-1 xs:grid-cols-1">
-            <div className="w-10/12 flex gap-3 p-6 rounded-xl mx-auto shadow-emerald-600 shadow-lg mb-6 bg-black">
-              <div>
-                <FcPhone className="hover:animate-bounce" size="32px" />
-              </div>
-              <div>
-                <h1 className="text-xl font-bold font-contact">Phone :</h1>
-                <h1 className="xxs:text-[14px] md:text-xl text-gray-500 font-contact">
-                  +91-7020644638
-                </h1>
-              </div>
-            </div>
 
-            <div className="w-10/12 flex gap-3 p-6 rounded-xl mx-auto shadow-lg shadow-red-400  mb-6 bg-black">
-              <div>
-                <SiGmail
-                  className="hover:animate-bounce"
-                  size="32px"
-                  color="red"
-                />
-              </div>
-              <div>
-                <h1 className="text-xl font-bold font-contact">Email :</h1>
-                <h1 className="xxs:text-[11px] md:text-xl text-gray-500 font-contact">
-                  <a
-                    href="mailto:salmanajani0426@gmail.com"
-                    className="hover:underline"
-                    target="_blank"
-                  >
-                    salmanajani0426@gmail.com
-                  </a>
-                </h1>
-              </div>
-            </div>
+        {/* Resume */}
+        <div
+          className="w-5/12 md:w-3/12 flex flex-col items-center gap-3 p-6 rounded-xl mx-auto shadow-rose-500 shadow-md mb-12 bg-gray-900 text-white dark:bg-white dark:text-gray-900"
+          data-aos="fade-down"
+        >
+          <div>
+            <FaDownload
+              className="hover:animate-bounce text-yellow-400"
+              size="32px"
+            />
+          </div>
+          <div>
+            <a
+              href="https://drive.google.com/u/0/uc?id=1We9ytnoF1n0U6Is59-933y8CUCnQTWCE&export=download"
+              smooth
+              className="text-white py-2 px-4 bg-gray-900 text-xl font-bold hover:underline dark:text-gray-900 dark:bg-white"
+            >
+              Resume
+            </a>
+          </div>
+        </div>
 
-            <div className="w-10/12 flex gap-3 p-6 rounded-xl mx-auto shadow-lg shadow-gray-400 bg-black">
-              <div>
-                <FaGithub
-                  className="hover:animate-bounce"
-                  size="32px"
-                  color="white"
-                />
-              </div>
-              <div>
-                <h1 className="text-xl font-bold font-contact">GitHub :</h1>
-                <h1 className="xxs:text-[14px] md:text-xl text-gray-500 font-contact">
-                  <a
-                    href="https://github.com/SalmanAjani"
-                    className="hover:underline"
-                    target="_blank"
-                  >
-                    SalmanAjani
-                  </a>
-                </h1>
-              </div>
+        {/* Contact */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div
+            className="w-10/12 flex gap-3 p-6 rounded-xl mx-auto shadow-rose-500 shadow-md mb-6 bg-gray-900 text-white dark:bg-white dark:text-gray-900"
+            data-aos="fade-right"
+          >
+            <div>
+              <FcPhone className="hover:animate-bounce" size="32px" />
             </div>
+            <div>
+              <h1 className="text-xl font-bold">Phone :</h1>
+              <h1 className="xxs:text-[14px] md:text-xl">+91-7020644638</h1>
+            </div>
+          </div>
 
-            <div className="w-10/12 flex gap-3 p-6 rounded-xl mx-auto shadow-lg shadow-blue-400 bg-black">
-              <div>
-                <FaLinkedin
-                  className="hover:animate-bounce"
-                  size="32px"
-                  color="cyan"
-                />
-              </div>
-              <div>
-                <h1 className="text-xl font-bold font-contact">LinkedIn :</h1>
-                <h1 className="xxs:text-[14px] md:text-xl text-gray-500 font-contact">
-                  <a
-                    href="https://www.linkedin.com/in/salmanajani26/"
-                    className="hover:underline"
-                    target="_blank"
-                  >
-                    salmanajani26
-                  </a>
-                </h1>
-              </div>
+          <div
+            className="w-10/12 flex gap-3 p-6 rounded-xl mx-auto shadow-md shadow-rose-500 mb-6 bg-gray-900 text-white dark:bg-white dark:text-gray-900"
+            data-aos="fade-left"
+          >
+            <div>
+              <SiGmail
+                className="hover:animate-bounce"
+                size="32px"
+                color="red"
+              />
+            </div>
+            <div>
+              <h1 className="text-xl font-bold">Email :</h1>
+              <h1 className="text-[12px] md:text-xl">
+                <a
+                  href="mailto:salmanajani0426@gmail.com"
+                  className="hover:underline"
+                  target="_blank"
+                >
+                  salmanajani0426@gmail.com
+                </a>
+              </h1>
+            </div>
+          </div>
+
+          <div
+            className="w-10/12 flex gap-3 p-6 rounded-xl mx-auto shadow-md shadow-rose-500 bg-gray-900 text-white dark:bg-white dark:text-gray-900 mb-6"
+            data-aos="fade-right"
+          >
+            <div>
+              <FaGithub
+                className="hover:animate-bounce"
+                size="32px"
+                color="gray"
+              />
+            </div>
+            <div>
+              <h1 className="text-xl font-bold">GitHub :</h1>
+              <h1 className="xxs:text-[14px] md:text-xl">
+                <a
+                  href="https://github.com/SalmanAjani"
+                  className="hover:underline"
+                  target="_blank"
+                >
+                  SalmanAjani
+                </a>
+              </h1>
+            </div>
+          </div>
+
+          <div
+            className="w-10/12 flex gap-3 p-6 rounded-xl mx-auto shadow-md shadow-rose-500 bg-gray-900 text-white dark:bg-white dark:text-gray-900 mb-6"
+            data-aos="fade-left"
+          >
+            <div>
+              <FaLinkedin
+                className="hover:animate-bounce"
+                size="32px"
+                color="#0077b5"
+              />
+            </div>
+            <div>
+              <h1 className="text-xl font-bold">LinkedIn :</h1>
+              <h1 className="xxs:text-[14px] md:text-xl">
+                <a
+                  href="https://www.linkedin.com/in/salmanajani26/"
+                  className="hover:underline"
+                  target="_blank"
+                >
+                  salmanajani26
+                </a>
+              </h1>
             </div>
           </div>
         </div>

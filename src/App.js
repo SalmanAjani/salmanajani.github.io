@@ -7,9 +7,15 @@ import Projects from "./components/Projects.jsx";
 import SocialLinks from "./components/SocialLinks";
 import useReady from "./components/useReady";
 import LoadingPage from "./components/LoadingPage";
+import DotGroup from "./components/DotGroup";
+import { useState } from "react";
+import GithubSection from "./components/GithubSection";
 
 function App() {
+  const [selectedPage, setSelectedPage] = useState("home");
+
   const { ready } = useReady(2700);
+
   return (
     <div>
       {ready !== true ? (
@@ -21,8 +27,13 @@ function App() {
           <About />
           <Skills />
           <Projects />
+          <GithubSection />
           <Contact />
           <SocialLinks />
+          <DotGroup
+            selectedPage={selectedPage}
+            setSelectedPage={setSelectedPage}
+          />
         </div>
       )}
     </div>

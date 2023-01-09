@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import html from "../assets/html.png";
 import css from "../assets/css.png";
@@ -8,29 +8,20 @@ import typescript from "../assets/typescript.png";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
 import redux from "../assets/redux.png";
-import jest from "../assets/jest.png";
-import postman from "../assets/postman.png";
 import node from "../assets/node.png";
 import mongodb from "../assets/mongodb.png";
 import express from "../assets/express.png";
-// import npm from "../assets/npm.png";
 import nextjs from "../assets/nextjs.png";
-import cypress from "../assets/cypress.png";
+import { Timeline } from "flowbite-react";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-
-import "./styles.css";
-
-import { Navigation } from "swiper";
 
 const Skills = () => {
+  useEffect(() => {
+    AOS.init({ delay: 100 });
+  }, []);
+
   const techs = [
     {
       id: 1,
@@ -74,210 +65,87 @@ const Skills = () => {
       title: "NextJS",
       style: "shadow-gray-400",
     },
-
     {
       id: 8,
       src: typescript,
       title: "Typescript",
       style: "shadow-blue-400",
     },
-
     {
       id: 9,
-      src: jest,
-      title: "Jest",
-      style: "shadow-orange-400",
-    },
-  ];
-
-  const back = [
-    {
-      id: 10,
       src: node,
       title: "NodeJS",
       style: "shadow-green-400",
     },
     {
-      id: 11,
+      id: 10,
       src: express,
       title: "Express",
       style: "shadow-gray-400",
     },
     {
-      id: 12,
+      id: 11,
       src: mongodb,
       title: "Mongodb",
       style: "shadow-green-400",
     },
-  ];
-
-  const extra = [
     {
-      id: 13,
+      id: 12,
       src: github,
       title: "GitHub",
       style: "shadow-gray-400",
     },
-    {
-      id: 14,
-      src: postman,
-      title: "PostMan",
-      style: "shadow-orange-400",
-    },
-    {
-      id: 15,
-      src: cypress,
-      title: "Cypress",
-      style: "shadow-gray-400",
-    },
   ];
-
-  useEffect(() => {
-    AOS.init({ delay: 200 });
-  }, []);
 
   return (
     <div
       name="skills"
-      className="bg-gradient-to-b to-emerald-400 from-emerald-300 w-full py-40 pt-32"
+      id="skills"
+      className="max-w-screen pt-4 md:pt-20 pb-20 md:pb-24 bg-white dark:bg-gray-900 flex flex-col-reverse items-center font-contact md:flex-row md:justify-evenly md:px-24 md:gap-x-12 xl:px-64"
     >
-      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-emerald-900">
-        <div className="mx-auto">
-          <p
-            className="text-5xl font-bold border-b-4 border-emerald-900 inline font-contact"
-            data-aos="fade-right"
-          >
-            Skills
-          </p>
+      {/* Left Side */}
+      <div className="mt-16 w-8/12 lg:w-6/12" data-aos="fade-right">
+        <h2 className="text-2xl text-rose-500 mb-8 font-extrabold text-center md:text-left">
+          EDUCATION
+        </h2>
+        <div>
+          <Timeline>
+            <Timeline.Item>
+              <Timeline.Point />
+              <Timeline.Content>
+                <Timeline.Time>June 2022 - Present</Timeline.Time>
+                <Timeline.Title>Masai School</Timeline.Title>
+                <Timeline.Title>Full Stack Web Development</Timeline.Title>
+              </Timeline.Content>
+            </Timeline.Item>
+            <Timeline.Item>
+              <Timeline.Point />
+              <Timeline.Content>
+                <Timeline.Time>July 2016 - March 2019</Timeline.Time>
+                <Timeline.Title>Centre Point College</Timeline.Title>
+                <Timeline.Title>
+                  Bachelors in Business Administration (BBA)
+                </Timeline.Title>
+              </Timeline.Content>
+            </Timeline.Item>
+          </Timeline>
         </div>
+      </div>
 
-        <div className="mx-auto pt-20 mb-10" data-aos="fade-up">
-          <h3 className="font-contact text-4xl text-black border-b-2 border-black inline">
-            FrontEnd
-          </h3>
-        </div>
-        <div className="text-white">
-          <Swiper
-            slidesPerView={1}
-            spaceBetween={10}
-            navigation={true}
-            loop={true}
-            breakpoints={{
-              "@0.00": {
-                slidesPerView: 1,
-                spaceBetween: 10,
-              },
-              "@0.75": {
-                slidesPerView: 2,
-                spaceBetween: 20,
-              },
-              "@1.00": {
-                slidesPerView: 3,
-                spaceBetween: 40,
-              },
-              "@1.50": {
-                slidesPerView: 4,
-                spaceBetween: 50,
-              },
-            }}
-            modules={[Navigation]}
-            className="mySwiper"
-          >
-            {techs.map(({ id, src, title }) => (
-              <SwiperSlide>
-                <div key={id}>
-                  <img src={src} alt={title} />
-                  <p className="mt-4">{title}</p>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
-
-        <div className="mx-auto pt-20 mb-10" data-aos="fade-up">
-          <h3 className="font-contact text-4xl text-black border-b-2 border-black inline">
-            BackEnd
-          </h3>
-        </div>
-        <div className="text-white">
-          <Swiper
-            slidesPerView={1}
-            spaceBetween={10}
-            navigation={true}
-            loop={true}
-            breakpoints={{
-              "@0.00": {
-                slidesPerView: 1,
-                spaceBetween: 10,
-              },
-              "@0.75": {
-                slidesPerView: 2,
-                spaceBetween: 20,
-              },
-              "@1.00": {
-                slidesPerView: 3,
-                spaceBetween: 40,
-              },
-              "@1.50": {
-                slidesPerView: 3,
-                spaceBetween: 50,
-              },
-            }}
-            modules={[Navigation]}
-            className="mySwiper"
-          >
-            {back.map(({ id, src, title }) => (
-              <SwiperSlide>
-                <div key={id}>
-                  <img src={src} alt={title} />
-                  <p className="mt-4">{title}</p>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
-
-        <div className="mx-auto pt-20 mb-10" data-aos="fade-up">
-          <h3 className="font-contact text-4xl text-black border-b-2 border-black inline">
-            Tools I Use
-          </h3>
-        </div>
-        <div className="text-white">
-          <Swiper
-            slidesPerView={1}
-            spaceBetween={10}
-            navigation={true}
-            loop={true}
-            breakpoints={{
-              "@0.00": {
-                slidesPerView: 1,
-                spaceBetween: 10,
-              },
-              "@0.75": {
-                slidesPerView: 2,
-                spaceBetween: 20,
-              },
-              "@1.00": {
-                slidesPerView: 3,
-                spaceBetween: 40,
-              },
-              "@1.50": {
-                slidesPerView: 3,
-                spaceBetween: 50,
-              },
-            }}
-            modules={[Navigation]}
-            className="mySwiper"
-          >
-            {extra.map(({ id, src, title }) => (
-              <SwiperSlide>
-                <div key={id}>
-                  <img src={src} alt={title} />
-                  <p className="mt-4">{title}</p>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+      {/* Right Side */}
+      <div data-aos="fade-left">
+        <h2 className="text-2xl text-center text-rose-500 mb-8 font-extrabold">
+          SKILLS
+        </h2>
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-3 text-center">
+          {techs.map(({ id, src, title }) => (
+            <div className="p-4 hover:scale-105 duration-200" key={id}>
+              <img src={src} alt="title" width={75} height={75} />
+              <p className="pt-4 text-gray-900 dark:text-white font-bold">
+                {title}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </div>
