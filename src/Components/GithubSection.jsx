@@ -22,7 +22,7 @@ const GithubSection = () => {
           GITHUB STATS
         </h2>
         <img
-          src="https://github-readme-stats.vercel.app/api?username=SalmanAjani&show_icons=true"
+          src="https://github-readme-stats-salmanajani.vercel.app/api?username=SalmanAjani&show_icons=true"
           alt="Salman-Github-Stats"
           data-aos="fade-down"
         />
