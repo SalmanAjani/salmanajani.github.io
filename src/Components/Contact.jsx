@@ -16,7 +16,7 @@ const Contact = () => {
     <div
       name="contact"
       id="contact"
-      className="max-w-screen px-12 bg-white dark:bg-gray-900 font-contact pt-4 md:pt-20 pb-20 md:pb-24 xl:px-64 px-6"
+      className="max-w-screen bg-white dark:bg-gray-900 font-contact pt-4 md:pt-20 pb-20 md:pb-24 xl:px-64 px-6"
     >
       {/* Heading */}
       <div className="text-center mb-12" data-aos="fade-down">
