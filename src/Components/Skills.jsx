@@ -113,7 +113,7 @@ const Skills = () => {
             <Timeline.Item>
               <Timeline.Point />
               <Timeline.Content>
-                <Timeline.Time>June 2022 - Present</Timeline.Time>
+                <Timeline.Title>June 2022 - Feb 2023</Timeline.Title>
                 <Timeline.Title>Masai School</Timeline.Title>
                 <Timeline.Title>Full Stack Web Development</Timeline.Title>
               </Timeline.Content>
@@ -121,7 +121,7 @@ const Skills = () => {
             <Timeline.Item>
               <Timeline.Point />
               <Timeline.Content>
-                <Timeline.Time>July 2016 - March 2019</Timeline.Time>
+                <Timeline.Title>July 2016 - March 2019</Timeline.Title>
                 <Timeline.Title>Centre Point College</Timeline.Title>
                 <Timeline.Title>
                   Bachelors in Business Administration (BBA)

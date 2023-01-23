@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import final1 from "../assets/final1.png";
+import heroImg from "../assets/heroImg.png";
 import Typewriter from "typewriter-effect";
 
 import AOS from "aos";
@@ -41,7 +41,7 @@ const Home = () => {
         className="bg-gradient-to-b from-gray-900 to-gray-800 dark:bg-gradient-to-b dark:from-white dark:to-gray-300 rounded-[80px] shadow-md shadow-rose-500"
         data-aos="fade-down"
       >
-        <img src={final1} alt="hero" />
+        <img src={heroImg} alt="hero" width={300} />
       </div>
 
       {/* Intro-2 */}

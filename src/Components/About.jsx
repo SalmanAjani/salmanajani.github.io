@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
-import final2 from "../assets/final2.png";
-import dots from "../assets/dots.png";
+import gif1 from "../assets/gif1.gif";
 import Top from "./Top";
 
 import AOS from "aos";
@@ -24,17 +23,11 @@ const About = () => {
       >
         {/* Left */}
         <div
-          className="mt-12 bg-gradient-to-b from-gray-900 to-gray-800 dark:bg-gradient-to-b dark:from-white dark:to-gray-300 rounded-[80px] mx-8 shadow-md shadow-rose-500"
+          className="mt-12 bg-gradient-to-b from-gray-900 to-gray-800 dark:bg-gradient-to-b dark:from-white dark:to-gray-300s mx-8 
+          border-2 border-gray-900 dark:border-white"
           data-aos="fade-down"
         >
-          <img
-            src={dots}
-            alt="dots"
-            width={50}
-            height={50}
-            className="absolute"
-          />
-          <img src={final2} alt="hero-2" width={400} height={400} />
+          <img src={gif1} alt="hero-2" width={400} height={400} />
         </div>
 
         {/* Right */}
@@ -59,7 +52,7 @@ const About = () => {
             started making my own websites. I worked on different collaborative
             projects with fellow batchmates and even learned Data Structures and
             Algorithms. Everything you see in the projects section is what I've
-            build/worked on from scratch in the past 8 months.
+            built/worked on from scratch in the past 8 months.
           </p>
         </div>
       </div>

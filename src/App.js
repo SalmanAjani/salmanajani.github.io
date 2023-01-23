@@ -5,37 +5,27 @@ import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import Projects from "./components/Projects.jsx";
 import SocialLinks from "./components/SocialLinks";
-import useReady from "./components/useReady";
-import LoadingPage from "./components/LoadingPage";
-import DotGroup from "./components/DotGroup";
-import { useState } from "react";
+// import useReady from "./components/useReady";
+// import LoadingPage from "./components/LoadingPage";
+// import DotGroup from "./components/DotGroup";
+// import { useState } from "react";
 import GithubSection from "./components/GithubSection";
 
 function App() {
-  const [selectedPage, setSelectedPage] = useState("home");
+  // const [selectedPage, setSelectedPage] = useState("home");
 
-  const { ready } = useReady(2700);
+  // const { ready } = useReady(2700);
 
   return (
     <div>
-      {ready !== true ? (
-        <LoadingPage />
-      ) : (
-        <div>
-          <NavBar />
-          <Home />
-          <About />
-          <Skills />
-          <Projects />
-          <GithubSection />
-          <Contact />
-          <SocialLinks />
-          <DotGroup
-            selectedPage={selectedPage}
-            setSelectedPage={setSelectedPage}
-          />
-        </div>
-      )}
+      <NavBar />
+      <Home />
+      <About />
+      <Skills />
+      <Projects />
+      <GithubSection />
+      <Contact />
+      <SocialLinks />
     </div>
   );
 }

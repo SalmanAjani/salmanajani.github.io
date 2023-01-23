@@ -1,10 +1,11 @@
 /* eslint-disable react/jsx-no-target-blank */
-//https://drive.google.com/u/0/uc?id=1We9ytnoF1n0U6Is59-933y8CUCnQTWCE&export=download
 
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 import Toggle from "./toggle";
+// import bgImage from "../assets/subtle.svg";
+import Res from "../assets/Salman_Ajani_Resume.pdf";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -97,8 +98,15 @@ const NavBar = () => {
       )}
 
       <a
-        href="https://drive.google.com/file/d/1We9ytnoF1n0U6Is59-933y8CUCnQTWCE/view?usp=sharing"
+        download=""
+        href={Res}
         target="_blank"
+        onClick={() =>
+          window.open(
+            "https://drive.google.com/file/d/1We9ytnoF1n0U6Is59-933y8CUCnQTWCE/view?usp=sharing",
+            "_blank"
+          )
+        }
         smooth
         className="text-white py-2 px-4 hover:scale-105 duration-200 bg-gray-900 border rounded-xl hidden md:flex dark:text-gray-900 dark:bg-white"
       >
