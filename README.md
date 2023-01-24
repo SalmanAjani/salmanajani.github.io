@@ -24,7 +24,7 @@ https://salmanajani.github.io/
 ## Screenshots
 
 - Home Section <br/> <br/>
-  <img src="https://i.ibb.co/8Yq3CnS/img1.png" alt="img1" border="0">
+  <img src="https://i.ibb.co/vJ7DJm1/img1.png" alt="img1" border="0">
 - Techstack Section <br/> <br/>
   <img src="https://i.ibb.co/B3hRkLw/img2.png" alt="img2" border="0">
 - Projects Section <br/> <br/>
