@@ -41,7 +41,7 @@ function Projects() {
       deployed: "https://appledark-app.vercel.app/",
       github: "https://github.com/SalmanAjani/appledark-tailwind",
       title: "AppleDark",
-      desc: "A single page website made using Tailwind CSS.",
+      desc: "A single page website made using Tailwind CSS. It is fully reponsive and uses modern design techniques.",
       techstack: "React, TailwindCSS",
     },
     {
@@ -50,7 +50,7 @@ function Projects() {
       deployed: "https://gilded-dolphin-9a7020.netlify.app/",
       github: "https://github.com/SalmanAjani/css-text-animation",
       title: "CSS Text Animation",
-      desc: "A text-animation that is built with pure CSS.",
+      desc: "A text-animation that is built with pure CSS. It uses keyframes for animations and shows different messages every 10 secs.",
       techstack: "HTML, CSS",
     },
     {
@@ -59,7 +59,7 @@ function Projects() {
       deployed: "https://iridescent-syrniki-50a879.netlify.app/",
       github: "https://github.com/SalmanAjani/js-weather-app",
       title: "Weather App",
-      desc: "A weather app built with vanilla Javascript.",
+      desc: "A weather app built with Javascript. It shows weather conditions of a particular city or according to user's current location.",
       techstack: "HTML, CSS, Javascript",
     },
   ];
