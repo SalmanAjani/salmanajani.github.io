@@ -10,7 +10,7 @@ Welcome to my portfolio website. All my top projects, skills and education are s
 - **Git Calender**
 - **Git Stats**
 
-## 🔗 Links
+## 🔗 Link
 
 https://salmanajani.github.io/
 
