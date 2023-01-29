@@ -41,7 +41,8 @@ const Home = () => {
 
       {/* Image */}
       <div
-        className="bg-gradient-to-b from-gray-900 to-gray-800 dark:bg-gradient-to-b dark:from-white dark:to-gray-300 rounded-[40px] mx-8 shadow-md shadow-rose-500"
+        className="bg-gradient-to-b from-gray-900 to-gray-800 dark:bg-gradient-to-b dark:from-white dark:to-gray-300 rounded-[40px] mx-8 shadow-md shadow-rose-500 pr-[14px]
+        pb-[1px]"
         data-aos="fade-down"
       >
         <img src={heroImg2} alt="hero" width={400} />
