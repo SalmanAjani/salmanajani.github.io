@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.29d0c51b.css",
-    "main.js": "/static/js/main.c074ef4c.js",
+    "main.css": "/static/css/main.0630980e.css",
+    "main.js": "/static/js/main.9db3aa3b.js",
     "static/media/n1.png": "/static/media/n1.023fc65be9188098000a.png",
     "static/media/appleDark.png": "/static/media/appleDark.aa930532a3de0eb0ead9.png",
     "static/media/Salman_Ajani_Resume.pdf": "/static/media/Salman_Ajani_Resume.b72fea009270ca73d413.pdf",
@@ -21,11 +21,11 @@
     "static/media/css.png": "/static/media/css.69a82c2d9e45c933a9cb.png",
     "static/media/javascript.png": "/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/index.html",
-    "main.29d0c51b.css.map": "/static/css/main.29d0c51b.css.map",
-    "main.c074ef4c.js.map": "/static/js/main.c074ef4c.js.map"
+    "main.0630980e.css.map": "/static/css/main.0630980e.css.map",
+    "main.9db3aa3b.js.map": "/static/js/main.9db3aa3b.js.map"
   },
   "entrypoints": [
-    "static/css/main.29d0c51b.css",
-    "static/js/main.c074ef4c.js"
+    "static/css/main.0630980e.css",
+    "static/js/main.9db3aa3b.js"
   ]
 }
