@@ -168,7 +168,7 @@ function Projects() {
               ({ id, src, deployed, github, title, desc, techstack }) => (
                 <div
                   key={id}
-                  className="mb-12 p-6 text-white bg-gray-900 dark:bg-white dark:text-gray-900 rounded-xl shadow-md shadow-rose-500"
+                  className="mb-12 p-6 text-white bg-gray-900 dark:bg-white dark:text-gray-900 rounded-xl shadow-md shadow-rose-500 xl:pb-0"
                 >
                   {/* Image */}
                   <img
@@ -196,7 +196,7 @@ function Projects() {
                   </div>
 
                   {/* Buttons */}
-                  <div className="flex justify-evenly">
+                  <div className="flex justify-evenly lg:gap-x-2">
                     <button
                       className="border-2 border-white rounded-md bg-white text-gray-900 dark:bg-gray-900 dark:text-white px-6 py-2 hover:scale-105 duration-200"
                       onClick={() => window.open(deployed)}

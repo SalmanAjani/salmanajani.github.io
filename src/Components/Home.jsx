@@ -15,7 +15,7 @@ const Home = () => {
       name="home"
       id="home"
       className="bg-white text-gray-900 dark:bg-gray-900 dark:text-white max-w-screen h-400 pt-36 pb-20 md:pb-24  
-      font-contact flex flex-col-reverse items-center md:flex md:flex-row md:justify-evenly md:gap-x-6 md:pt-48 px-2 md:mx-12 xl:px-64"
+      font-contact flex flex-col-reverse items-center md:flex md:flex-row md:justify-evenly md:gap-x-6 md:pt-48 px-2 md:px-12 xl:px-64"
     >
       {/* Intro */}
       <div
