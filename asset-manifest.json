@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.340b8cd2.css",
-    "main.js": "/static/js/main.aa1076c9.js",
+    "main.css": "/static/css/main.b8221fe4.css",
+    "main.js": "/static/js/main.87c7be05.js",
+    "static/media/img1.png": "/static/media/img1.3a689302368187ae93f7.png",
     "static/media/n1.png": "/static/media/n1.023fc65be9188098000a.png",
-    "static/media/appleDark.png": "/static/media/appleDark.aa930532a3de0eb0ead9.png",
     "static/media/Salman_Ajani_Resume.pdf": "/static/media/Salman_Ajani_Resume.b72fea009270ca73d413.pdf",
+    "static/media/hms1.png": "/static/media/hms1.af25a3b3d2db70c2d995.png",
     "static/media/gif1.gif": "/static/media/gif1.05f035b3a27b38553a6a.gif",
     "static/media/redux.png": "/static/media/redux.1b4bb5fceb01b19da59d.png",
     "static/media/heroImg2.png": "/static/media/heroImg2.016757924d02488dcde0.png",
+    "static/media/img2.png": "/static/media/img2.10f4045e7c53f886b582.png",
     "static/media/react.png": "/static/media/react.0cf951a69d8e58f83f9d.png",
-    "static/media/t1.png": "/static/media/t1.76a7df2d6a93213aa247.png",
     "static/media/node.png": "/static/media/node.952a9ea986dcfa5229ad.png",
     "static/media/express.png": "/static/media/express.cca64e0f360897258ecb.png",
     "static/media/typescript.png": "/static/media/typescript.9b1779a2fd3504559e59.png",
@@ -21,11 +22,11 @@
     "static/media/css.png": "/static/media/css.69a82c2d9e45c933a9cb.png",
     "static/media/javascript.png": "/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/index.html",
-    "main.340b8cd2.css.map": "/static/css/main.340b8cd2.css.map",
-    "main.aa1076c9.js.map": "/static/js/main.aa1076c9.js.map"
+    "main.b8221fe4.css.map": "/static/css/main.b8221fe4.css.map",
+    "main.87c7be05.js.map": "/static/js/main.87c7be05.js.map"
   },
   "entrypoints": [
-    "static/css/main.340b8cd2.css",
-    "static/js/main.aa1076c9.js"
+    "static/css/main.b8221fe4.css",
+    "static/js/main.87c7be05.js"
   ]
 }
