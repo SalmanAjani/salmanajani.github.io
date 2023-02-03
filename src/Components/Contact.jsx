@@ -7,6 +7,8 @@ import { FaGithub, FaLinkedin, FaDownload } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import Res from "../assets/Salman_Ajani_Resume.pdf";
+
 const Contact = () => {
   useEffect(() => {
     AOS.init({ delay: 200 });
@@ -36,7 +38,14 @@ const Contact = () => {
         </div>
         <div>
           <a
-            href="https://drive.google.com/u/0/uc?id=1We9ytnoF1n0U6Is59-933y8CUCnQTWCE&export=download"
+            download=""
+            href={Res}
+            onClick={() =>
+              window.open(
+                "https://drive.google.com/file/d/1We9ytnoF1n0U6Is59-933y8CUCnQTWCE/view?usp=sharing",
+                "_blank"
+              )
+            }
             smooth
             className="text-white py-2 px-4 bg-gray-900 text-xl font-bold hover:underline dark:text-gray-900 dark:bg-white"
           >
