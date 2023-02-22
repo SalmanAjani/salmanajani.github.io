@@ -7,7 +7,7 @@ import { FaGithub, FaLinkedin, FaDownload } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import Resume from "../assets/Salman-Ajani-Resume.pdf";
+import Res from "../assets/Salman-Ajani-Resume.pdf";
 
 const Contact = () => {
   useEffect(() => {
@@ -39,10 +39,10 @@ const Contact = () => {
         <div>
           <a
             download=""
-            href={Resume}
+            href={Res}
             onClick={() =>
               window.open(
-                "https://drive.google.com/file/d/1QgSfyFhJZVZGyhFsdYRCB8okS3A_FM6H/view?usp=sharing",
+                "https://drive.google.com/file/d/1C_-bBVrDFxzqBCNeAYyzGTPRI5szTuZs/view?usp=sharing",
                 "_blank"
               )
             }

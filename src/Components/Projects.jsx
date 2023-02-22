@@ -77,7 +77,7 @@ function Projects() {
     {
       id: 4,
       src: blog,
-      deployed: "https://good-teal-butterfly-kilt.cyclic.app/",
+      deployed: "https://good-teal-butterfly-kilt.cyclic.app/blogs",
       github: "https://github.com/SalmanAjani/nem-blogapp-backend",
       title: "Blog App Backend",
       desc: "This is a backend server that is ready to use for a simple blog app. There is a direct link that can be used as well.",
