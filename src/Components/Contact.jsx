@@ -7,7 +7,7 @@ import { FaGithub, FaLinkedin, FaDownload } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import Res from "../assets/Salman_Ajani_Resume.pdf";
+import Res from "../assets/Salman-Ajani-Resume.pdf";
 
 const Contact = () => {
   useEffect(() => {

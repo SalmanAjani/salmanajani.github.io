@@ -5,7 +5,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 import Toggle from "./toggle";
 // import bgImage from "../assets/subtle.svg";
-import Res from "../assets/Salman_Ajani_Resume.pdf";
+import Res from "../assets/Salman-Ajani-Resume.pdf";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
