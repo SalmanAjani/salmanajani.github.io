@@ -5,7 +5,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 import Toggle from "./toggle";
 // import bgImage from "../assets/subtle.svg";
-import Res from "../assets/Salman-Ajani-Resume.pdf";
+import Resume from "../assets/Salman-Ajani-Resume.pdf";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -87,7 +87,7 @@ const NavBar = () => {
             className="text-4xl py-6 cursor-pointer hover:text-white hover:bg-gray-900 hover:rounded-xl px-6 dark:hover:bg-white dark:hover:text-gray-900"
             onClick={() =>
               window.open(
-                "https://drive.google.com/file/d/1C_-bBVrDFxzqBCNeAYyzGTPRI5szTuZs/view?usp=sharing",
+                "https://drive.google.com/file/d/1r0OWQ7kwW7jQsQZ6a9TYiQ328Yhua4FD/view?usp=sharing",
                 "_blank"
               )
             }
@@ -99,11 +99,11 @@ const NavBar = () => {
 
       <a
         download=""
-        href={Res}
+        href={Resume}
         target="_blank"
         onClick={() =>
           window.open(
-            "https://drive.google.com/file/d/1C_-bBVrDFxzqBCNeAYyzGTPRI5szTuZs/view?usp=sharing",
+            "https://drive.google.com/file/d/1r0OWQ7kwW7jQsQZ6a9TYiQ328Yhua4FD/view?usp=sharing",
             "_blank"
           )
         }
