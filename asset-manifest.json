@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.b8221fe4.css",
-    "main.js": "/static/js/main.6bef993d.js",
+    "main.js": "/static/js/main.da02d670.js",
     "static/media/img1.png": "/static/media/img1.3a689302368187ae93f7.png",
     "static/media/n1.png": "/static/media/n1.023fc65be9188098000a.png",
     "static/media/Salman-Ajani-Resume.pdf": "/static/media/Salman-Ajani-Resume.b75deab7e674c6c3b5a6.pdf",
@@ -9,7 +9,7 @@
     "static/media/gif1.gif": "/static/media/gif1.05f035b3a27b38553a6a.gif",
     "static/media/redux.png": "/static/media/redux.1b4bb5fceb01b19da59d.png",
     "static/media/heroImg2.png": "/static/media/heroImg2.016757924d02488dcde0.png",
-    "static/media/img2.png": "/static/media/img2.10f4045e7c53f886b582.png",
+    "static/media/img2.png": "/static/media/img2.3fa95940304947624e68.png",
     "static/media/react.png": "/static/media/react.0cf951a69d8e58f83f9d.png",
     "static/media/node.png": "/static/media/node.952a9ea986dcfa5229ad.png",
     "static/media/express.png": "/static/media/express.cca64e0f360897258ecb.png",
@@ -23,10 +23,10 @@
     "static/media/javascript.png": "/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/index.html",
     "main.b8221fe4.css.map": "/static/css/main.b8221fe4.css.map",
-    "main.6bef993d.js.map": "/static/js/main.6bef993d.js.map"
+    "main.da02d670.js.map": "/static/js/main.da02d670.js.map"
   },
   "entrypoints": [
     "static/css/main.b8221fe4.css",
-    "static/js/main.6bef993d.js"
+    "static/js/main.da02d670.js"
   ]
 }
