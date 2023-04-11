@@ -1,28 +1,17 @@
-import React, { useEffect } from "react";
 import GitHubCalendar from "react-github-calendar";
-
-import AOS from "aos";
-import "aos/dist/aos.css";
-
 function Github() {
-  useEffect(() => {
-    AOS.init({ delay: 100 });
-  }, []);
-
   return (
-    <div>
-      <h1
-        className="text-2xl text-rose-500 pb-12 font-extrabold"
-        data-aos="fade-down"
-      >
+    <div className="xxs:px-1 sm:px-4 md:px-2 xl:px-0">
+      <h1 className="text-2xl text-neutral-800 pb-12 font-extrabold">
         GITHUB CALENDAR
       </h1>
-      <div data-aos="fade-down">
+      <div>
         <GitHubCalendar
           username="SalmanAjani"
           blockSize={15}
           blockMargin={5}
-          fontSize={20}
+          fontSize={16}
+          color="#3b82f6"
         />
       </div>
     </div>

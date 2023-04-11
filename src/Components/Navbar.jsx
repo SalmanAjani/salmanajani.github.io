@@ -3,9 +3,7 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
-import Toggle from "./toggle";
-// import bgImage from "../assets/subtle.svg";
-import Resume from "../assets/Salman-Ajani-Resume.pdf";
+import Res from "../assets/Salman-Ajani-Resume.pdf";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -34,9 +32,9 @@ const NavBar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center bg-white h-20 fixed z-20 font-contact text-[18px] w-screen px-12 dark:bg-gray-900 dark:text-white">
+    <div className="flex justify-between items-center bg-white h-20 fixed z-20 font-contact text-[18px] w-screen px-12 shadow-md text-neutral-800 font-medium">
       <div>
-        <Toggle />
+        <h1 className="font-bold text-[24px]">Salman</h1>
       </div>
 
       {/* Navbar */}
@@ -44,14 +42,9 @@ const NavBar = () => {
         {links.map(({ id, link }) => (
           <li
             key={id}
-            className="cursor-pointer capitalize text-gray-900 hover:scale-105 duration-200 p-4 dark:text-white"
+            className="cursor-pointer capitalize p-4 hover:text-blue-500"
           >
-            <Link
-              to={link}
-              smooth
-              duration={500}
-              className="hover:underline underline-offset-8"
-            >
+            <Link to={link} smooth duration={500}>
               {link}
             </Link>
           </li>
@@ -60,18 +53,18 @@ const NavBar = () => {
 
       <div
         onClick={() => setNav(!nav)}
-        className="cursor-pointer z-10 text-gray-900 md:hidden dark:text-white"
+        className="cursor-pointer z-10 md:hidden"
       >
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
 
       {/* Hamburger Section */}
       {nav && (
-        <ul className="flex flex-col items-center absolute top-0 left-0 w-screen h-screen justify-center bg-white text-gray-900 dark:bg-gray-900 dark:text-white">
+        <ul className="flex flex-col items-center absolute top-0 left-0 w-screen h-screen justify-center bg-white text-neutral-800">
           {links.map(({ id, link }) => (
             <li
               key={id}
-              className="cursor-pointer capitalize py-6 text-4xl hover:text-white hover:bg-gray-900 hover:rounded-xl px-6 dark:hover:bg-white dark:hover:text-gray-900"
+              className="cursor-pointer capitalize py-6 hover:text-blue-600 text-3xl px-6 "
             >
               <Link
                 onClick={() => setNav(!nav)}
@@ -83,8 +76,11 @@ const NavBar = () => {
               </Link>
             </li>
           ))}
-          <p
-            className="text-4xl py-6 cursor-pointer hover:text-white hover:bg-gray-900 hover:rounded-xl px-6 dark:hover:bg-white dark:hover:text-gray-900"
+          <a
+            download=""
+            href={Res}
+            target="_blank"
+            className="text-3xl py-6 cursor-pointer hover:text-blue-600 px-6"
             onClick={() =>
               window.open(
                 "https://drive.google.com/file/d/1r0OWQ7kwW7jQsQZ6a9TYiQ328Yhua4FD/view?usp=sharing",
@@ -93,13 +89,13 @@ const NavBar = () => {
             }
           >
             Resume
-          </p>
+          </a>
         </ul>
       )}
 
       <a
         download=""
-        href={Resume}
+        href={Res}
         target="_blank"
         onClick={() =>
           window.open(
@@ -108,7 +104,7 @@ const NavBar = () => {
           )
         }
         smooth
-        className="text-white py-2 px-4 hover:scale-105 duration-200 bg-gray-900 border rounded-xl hidden md:flex dark:text-gray-900 dark:bg-white"
+        className="py-2 px-4 duration-200 border hidden md:flex bg-neutral-800 text-white rounded-md hover:bg-blue-600"
       >
         Resume
       </a>
