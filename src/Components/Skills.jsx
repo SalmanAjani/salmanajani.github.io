@@ -126,7 +126,7 @@ const Skills = () => {
     <div
       name="skills"
       id="skills"
-      className="w-full bg-gray-200 py-36 text-center font-contact"
+      className="w-full bg-gray-100 py-36 text-center font-contact"
     >
       <h2 className="font-bold text-xl mb-10 text-blue-500">SKILLS</h2>
       {/* Flex */}

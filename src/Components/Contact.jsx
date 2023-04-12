@@ -13,7 +13,7 @@ const Contact = () => {
         Contact
       </h2>
       <div className="px-6 sm:grid sm:grid-cols-2 sm:gap-x-4 leading-10 text-neutral-600 md:w-9/12 md:mx-auto lg:w-6/12">
-        <div className="bg-gray-200 p-12 rounded-md mb-6">
+        <div className="bg-gray-100 p-12 rounded-md mb-6">
           <BiMailSend className="mx-auto text-3xl text-neutral-800" />
           <h3>salmanajani0426@gmail.com</h3>
           <button
@@ -23,7 +23,7 @@ const Contact = () => {
             Write me
           </button>
         </div>
-        <div className="bg-gray-200 p-12 rounded-md mb-6">
+        <div className="bg-gray-100 p-12 rounded-md mb-6">
           <BiMobile className="mx-auto text-3xl text-neutral-800" />
           <h3>+91-7020644638</h3>
           <button
@@ -34,7 +34,7 @@ const Contact = () => {
           </button>
         </div>
 
-        <div className="bg-gray-200 p-12 rounded-md mb-6">
+        <div className="bg-gray-100 p-12 rounded-md mb-6">
           <FaGithub className="mx-auto text-3xl text-neutral-800" />
           <h3>SalmanAjani</h3>
           <button
@@ -44,7 +44,7 @@ const Contact = () => {
             Checkout
           </button>
         </div>
-        <div className="bg-gray-200 p-12 rounded-md mb-6">
+        <div className="bg-gray-100 p-12 rounded-md mb-6">
           <FaLinkedin className="mx-auto text-3xl text-neutral-800" />
           <h3>salmanajani26</h3>
           <button

@@ -8,7 +8,7 @@ const Home = () => {
     <div
       name="home"
       id="home"
-      className="bg-gray-200 w-full pt-48 pb-24 font-contact flex flex-col-reverse items-center md:flex md:flex-row md:justify-center md:py-56 px-12 lg:px-16"
+      className="bg-gray-100 w-full pt-48 pb-24 font-contact flex flex-col-reverse items-center md:flex md:flex-row md:justify-center md:py-56 px-12 lg:px-16"
     >
       {/* Intro */}
       <div className="text-4xl mt-8 md:mt-0 md:text-6xl text-center md:text-left md:w-6/12 lg:w-5/12 text-neutral-800">

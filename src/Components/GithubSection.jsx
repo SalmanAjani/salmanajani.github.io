@@ -2,7 +2,7 @@ import Github from "./github";
 
 const GithubSection = () => {
   return (
-    <div className="bg-gray-200 py-36 font-contact rounded">
+    <div className="bg-gray-100 py-36 font-contact rounded">
       <div className="py-8 mx-3 mb-6 px-2 flex flex-col items-center text-center md:px-16 md:py-24 bg-white rounded-md sm:mx-6 xl:w-7/12 xl:mx-auto xl:mb-8">
         <Github />
       </div>
