@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
-import Res from "../assets/Salman-Ajani-Resume.pdf";
+import Resume from "../assets/Salman-Ajani-Resume.pdf";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -78,7 +78,7 @@ const NavBar = () => {
           ))}
           <a
             download=""
-            href={Res}
+            href={Resume}
             target="_blank"
             className="text-3xl py-6 cursor-pointer hover:text-blue-600 px-6"
             onClick={() =>
@@ -95,7 +95,7 @@ const NavBar = () => {
 
       <a
         download=""
-        href={Res}
+        href={Resume}
         target="_blank"
         onClick={() =>
           window.open(
