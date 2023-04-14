@@ -1,50 +1,50 @@
 import { FaGithub } from "react-icons/fa";
 import { BiLink } from "react-icons/bi";
 
+import printshop from "../assets/portfolio/printshop/p1.png";
 import hms from "../assets/portfolio/hms/hms1.png";
 import social from "../assets/portfolio/social/s1.png";
+import blogger from "../assets/portfolio/blogger/b1.png";
 
 function Projects() {
   const fullstack = [
     {
       id: 1,
+      src: printshop,
+      deployed: "https://justprintkaro.com/",
+      github: "https://github.com/piyush-agrawal6/PrintShop",
+      title: "JustPrintkaro",
+      desc: "JustPrintkaro is a printing based website where users can request their own customized designs.",
+      techstack: "React, Redux, Ant Design, Node.js, MongoDB, Hostinger",
+    },
+    {
+      id: 2,
       src: hms,
       deployed: "https://hms-user-side.netlify.app/",
       github:
         "https://github.com/piyush-agrawal6/Hospital-Management-System-User-Side",
       title: "Hospital management app",
-      desc: "An app that can be used for the complete management of a hospital.",
-      techstack: "Ant Design, React, Redux, Node.js, Express.js, MongoDB",
+      desc: "HMS is a web application that can be used for the complete management of a hospital.",
+      techstack: "React, Redux, Ant Design, Node.js, MongoDB",
     },
     {
-      id: 2,
+      id: 3,
+      src: blogger,
+      deployed: "https://blogger-sql.netlify.app/",
+      github: "https://github.com/SalmanAjani/Blogger",
+      title: "Blogger",
+      desc: "Blogger is a blogging app where users can read blogs and also create their own blogs.",
+      techstack: "React, Context API, SCSS, Node.js, MySQL",
+    },
+    {
+      id: 4,
       src: social,
       deployed: "https://social-100-mern.netlify.app/",
       github: "https://github.com/SalmanAjani/Social",
       title: "Social",
       desc: "Social is a social media app for users to interact and create posts.",
       techstack:
-        "Material UI, React, Redux Toolkit, Node.js, Express.js, MongoDB",
-    },
-    {
-      id: 3,
-      src: hms,
-      deployed: "https://hms-user-side.netlify.app/",
-      github:
-        "https://github.com/piyush-agrawal6/Hospital-Management-System-User-Side",
-      title: "Hospital management app",
-      desc: "This is an app that can be used for the management of a hospital.",
-      techstack: "Ant Design, React, Redux, MongoDB, Express, NodeJs",
-    },
-    {
-      id: 4,
-      src: hms,
-      deployed: "https://hms-user-side.netlify.app/",
-      github:
-        "https://github.com/piyush-agrawal6/Hospital-Management-System-User-Side",
-      title: "Hospital management app",
-      desc: "This is an app that can be used for the management of a hospital.",
-      techstack: "Ant Design, React, Redux, MongoDB, Express, NodeJs",
+        "React, Redux Toolkit, Material UI, Node.js, Express.js, MongoDB",
     },
   ];
 
@@ -59,7 +59,7 @@ function Projects() {
         {fullstack.map(
           ({ id, src, deployed, github, title, desc, techstack }) => (
             <div
-              className="shadow-md p-8 pb-10 bg-gray-100 mb-10 rounded-md"
+              className="shadow-md p-8 pb-12 bg-gray-100 mb-10 rounded-md"
               key={id}
             >
               <img
