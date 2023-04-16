@@ -52,7 +52,7 @@ function Projects() {
     <div
       name="projects"
       id="projects"
-      className="w-full flex flex-col items-center font-contact px-6 pt-36 pb-32 sm:px-10 lg:w-10/12 lg:mx-auto xl:w-9/12 xl:mx-auto"
+      className="w-full flex flex-col items-center font-contact px-6 pt-36 pb-32 sm:px-10 lg:w-10/12 lg:mx-auto xl:w-8/12 xl:mx-auto"
     >
       <h2 className="font-bold text-xl mb-10 text-blue-500">PROJECTS</h2>
       <div className="sm:grid sm:grid-cols-2 sm:gap-x-6 md:grid-cols-3">
