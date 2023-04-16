@@ -14,8 +14,8 @@ function Projects() {
       deployed: "https://justprintkaro.com/",
       github: "https://github.com/piyush-agrawal6/PrintShop",
       title: "JustPrintkaro",
-      desc: "JustPrintkaro is a printing based website where users can request their own customized designs.",
-      techstack: "React, Redux, Ant Design, Node.js, MongoDB, Hostinger",
+      desc: "JustPrintkaro is a printing based website where users can request their own designs.",
+      techstack: "React, Redux, Nodejs, MongoDB",
     },
     {
       id: 2,
@@ -25,7 +25,7 @@ function Projects() {
         "https://github.com/piyush-agrawal6/Hospital-Management-System-User-Side",
       title: "Hospital management app",
       desc: "HMS is a web application that can be used for the complete management of a hospital.",
-      techstack: "React, Redux, Ant Design, Node.js, MongoDB",
+      techstack: "React, Redux, Nodejs, MongoDB",
     },
     {
       id: 3,
@@ -34,7 +34,7 @@ function Projects() {
       github: "https://github.com/SalmanAjani/Blogger",
       title: "Blogger",
       desc: "Blogger is a blogging app where users can read blogs and also create their own blogs.",
-      techstack: "React, Context API, SCSS, Node.js, MySQL",
+      techstack: "React, Context API, SCSS, Nodejs, MySQL",
     },
     {
       id: 4,
@@ -44,7 +44,7 @@ function Projects() {
       title: "Social",
       desc: "Social is a social media app for users to interact and create posts.",
       techstack:
-        "React, Redux Toolkit, Material UI, Node.js, Express.js, MongoDB",
+        "React, Redux Toolkit, Material UI, Nodejs, Expressjs, MongoDB",
     },
   ];
 
@@ -52,20 +52,20 @@ function Projects() {
     <div
       name="projects"
       id="projects"
-      className="w-full flex flex-col items-center font-contact px-6 pt-36 pb-32 sm:px-16 lg:w-8/12 lg:mx-auto"
+      className="w-full flex flex-col items-center font-contact px-6 pt-36 pb-32 sm:px-10 xl:w-9/12 xl:mx-auto"
     >
       <h2 className="font-bold text-xl mb-10 text-blue-500">PROJECTS</h2>
       <div className="sm:grid sm:grid-cols-2 sm:gap-x-6 md:grid-cols-3">
         {fullstack.map(
           ({ id, src, deployed, github, title, desc, techstack }) => (
             <div
-              className="shadow-md p-8 pb-12 bg-gray-100 mb-10 rounded-md"
+              className="shadow-md p-8 pb-6 bg-gray-100 mb-10 rounded-md h-auto"
               key={id}
             >
               <img
                 src={src}
                 alt={title}
-                className="pb-4 h-3/6 mx-auto w-full"
+                className="pb-4 sm:h-5/12 md:h-2/6 lg:h-40 mx-auto w-full"
               />
               <p className="text-xl font-semibold text-neutral-800 pb-2 sm:text-[18px]">
                 {title}
