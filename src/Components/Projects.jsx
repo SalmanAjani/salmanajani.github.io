@@ -52,7 +52,7 @@ function Projects() {
     <div
       name="projects"
       id="projects"
-      className="w-full flex flex-col items-center font-contact px-6 pt-36 pb-32 sm:px-10 xl:w-9/12 xl:mx-auto"
+      className="w-full flex flex-col items-center font-contact px-6 pt-36 pb-32 sm:px-10 lg:w-10/12 lg:mx-auto xl:w-9/12 xl:mx-auto"
     >
       <h2 className="font-bold text-xl mb-10 text-blue-500">PROJECTS</h2>
       <div className="sm:grid sm:grid-cols-2 sm:gap-x-6 md:grid-cols-3">
@@ -65,7 +65,7 @@ function Projects() {
               <img
                 src={src}
                 alt={title}
-                className="pb-4 sm:h-5/12 md:h-2/6 lg:h-40 mx-auto w-full"
+                className="pb-4 sm:h-5/12 md:h-36 lg:h-40 xl:h-44 mx-auto w-full"
               />
               <p className="text-xl font-semibold text-neutral-800 pb-2 sm:text-[18px]">
                 {title}
