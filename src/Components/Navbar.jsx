@@ -103,7 +103,6 @@ const NavBar = () => {
             "_blank"
           )
         }
-        smooth
         className="py-2 px-4 border hidden md:flex bg-neutral-800 text-white rounded-md hover:bg-blue-500 duration-300"
       >
         Resume

@@ -2,7 +2,6 @@
 import React from "react";
 import heroImg2 from "../assets/heroImg2.png";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { MdWavingHand } from "react-icons/md";
 
 const Home = () => {
   return (
@@ -15,11 +14,11 @@ const Home = () => {
       <div className="text-4xl mt-10 md:mt-0 md:text-7xl text-center md:text-left md:w-6/12 lg:w-5/12 text-neutral-800">
         <h2 className="font-bold">
           Full Stack Developer{" "}
-          <MdWavingHand className="inline text-[#e5b78e]" />
+          <p className="inline-block animate-wavinghand">👋🏻</p>
         </h2>
         <h3 className="text-xl mt-8 font-normal sm:w-8/12 sm:m-auto sm:mt-4 md:m-0 md:mt-4 md:w-10/12 text-neutral-600">
           Hi, I'm Salman Ajani. A passionate Full Stack Developer based in
-          Bangalore, India. <p className="inline-block animate-bounce">📍</p>
+          Bangalore, India. 📍
         </h3>
         <div className="flex justify-center mt-8 gap-4 md:justify-start">
           <a
