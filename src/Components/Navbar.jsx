@@ -42,7 +42,7 @@ const NavBar = () => {
         {links.map(({ id, link }) => (
           <li
             key={id}
-            className="cursor-pointer capitalize p-4 hover:text-blue-500"
+            className="cursor-pointer capitalize p-4 hover:text-blue-500 duration-300"
           >
             <Link to={link} smooth duration={500}>
               {link}
@@ -64,7 +64,7 @@ const NavBar = () => {
           {links.map(({ id, link }) => (
             <li
               key={id}
-              className="cursor-pointer capitalize py-6 hover:text-blue-600 text-3xl px-6 "
+              className="cursor-pointer capitalize py-6 hover:text-blue-500 text-3xl px-6 duration-300"
             >
               <Link
                 onClick={() => setNav(!nav)}
@@ -80,7 +80,7 @@ const NavBar = () => {
             download=""
             href={Resume}
             target="_blank"
-            className="text-3xl py-6 cursor-pointer hover:text-blue-600 px-6"
+            className="text-3xl py-6 cursor-pointer hover:text-blue-500 px-6 duration-300"
             onClick={() =>
               window.open(
                 "https://drive.google.com/file/d/1r0OWQ7kwW7jQsQZ6a9TYiQ328Yhua4FD/view?usp=sharing",
@@ -104,7 +104,7 @@ const NavBar = () => {
           )
         }
         smooth
-        className="py-2 px-4 duration-200 border hidden md:flex bg-neutral-800 text-white rounded-md hover:bg-blue-600"
+        className="py-2 px-4 border hidden md:flex bg-neutral-800 text-white rounded-md hover:bg-blue-500 duration-300"
       >
         Resume
       </a>

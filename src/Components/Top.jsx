@@ -6,7 +6,7 @@ const Top = () => {
   };
   return (
     <div
-      className="w-fit fixed top-[88%] right-14 z-30 hidden md:flex justify-center items-center p-4 hover:cursor-pointer border-solid bg-neutral-800 rounded-md shadow-md"
+      className="w-fit fixed top-[88%] right-14 z-30 hidden md:flex justify-center items-center p-4 hover:cursor-pointer border-solid bg-neutral-800 rounded-md shadow-md hover:bg-blue-500 duration-300"
       onClick={handleTop}
     >
       <FaHandPointUp
