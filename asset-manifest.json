@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.9446b67d.css",
-    "main.js": "/static/js/main.2ea70ca0.js",
+    "main.css": "/static/css/main.cd9cc8cb.css",
+    "main.js": "/static/js/main.79033f7e.js",
     "static/media/p1.png": "/static/media/p1.db6f4ae13fa23404b059.png",
     "static/media/s1.png": "/static/media/s1.fd5de92266068a13df3d.png",
     "static/media/b1.png": "/static/media/b1.495dde32b632ff7cca2f.png",
     "static/media/Salman-Ajani-Resume.pdf": "/static/media/Salman-Ajani-Resume.dcdbf28eef7952729606.pdf",
     "static/media/hms1.png": "/static/media/hms1.af25a3b3d2db70c2d995.png",
-    "static/media/gif1.gif": "/static/media/gif1.05f035b3a27b38553a6a.gif",
     "static/media/redux.png": "/static/media/redux.1b4bb5fceb01b19da59d.png",
     "static/media/heroImg2.png": "/static/media/heroImg2.016757924d02488dcde0.png",
+    "static/media/hero1.png": "/static/media/hero1.6f6651afebcd2f119adc.png",
     "static/media/react.png": "/static/media/react.0cf951a69d8e58f83f9d.png",
     "static/media/node.png": "/static/media/node.952a9ea986dcfa5229ad.png",
     "static/media/express.png": "/static/media/express.cca64e0f360897258ecb.png",
@@ -23,11 +23,11 @@
     "static/media/mysql.png": "/static/media/mysql.4676ad983d6bd3e9fac9.png",
     "static/media/javascript.png": "/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/index.html",
-    "main.9446b67d.css.map": "/static/css/main.9446b67d.css.map",
-    "main.2ea70ca0.js.map": "/static/js/main.2ea70ca0.js.map"
+    "main.cd9cc8cb.css.map": "/static/css/main.cd9cc8cb.css.map",
+    "main.79033f7e.js.map": "/static/js/main.79033f7e.js.map"
   },
   "entrypoints": [
-    "static/css/main.9446b67d.css",
-    "static/js/main.2ea70ca0.js"
+    "static/css/main.cd9cc8cb.css",
+    "static/js/main.79033f7e.js"
   ]
 }
