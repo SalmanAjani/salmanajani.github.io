@@ -23,12 +23,12 @@ const Skills = () => {
     {
       id: 1,
       src: html,
-      title: "HTML",
+      title: "HTML5",
     },
     {
       id: 2,
       src: css,
-      title: "CSS",
+      title: "CSS3",
     },
     {
       id: 3,
@@ -130,7 +130,7 @@ const Skills = () => {
     >
       <h2 className="font-bold text-xl mb-10 text-blue-500">SKILLS</h2>
       {/* Flex */}
-      <div className="px-8 sm:px-32 md:flex md:justify-center gap-16">
+      <div className="px-8 sm:px-12 md:flex md:justify-center gap-16">
         {/* Left Side */}
         <div className="bg-white mb-12 rounded-md pb-4 md:p-12">
           <h3 className="text-2xl text-neutral-800 font-bold pt-4 mb-4 md:pt-0">
@@ -138,7 +138,10 @@ const Skills = () => {
           </h3>
           <div className="grid grid-cols-3 gap-y-3 md:gap-x-6">
             {fronttech.map(({ id, src, title }) => (
-              <div className="p-4" key={id}>
+              <div
+                className="p-4 mx-auto xl:shadow-2xl xl:rounded-md xl:mx-0"
+                key={id}
+              >
                 <img
                   src={src}
                   alt="title"
@@ -159,7 +162,10 @@ const Skills = () => {
           </h3>
           <div className="grid grid-cols-3 gap-y-3 md:gap-x-6">
             {backtech.map(({ id, src, title }) => (
-              <div className="p-4" key={id}>
+              <div
+                className="p-4 mx-auto xl:shadow-2xl xl:rounded-md xl:mx-0"
+                key={id}
+              >
                 <img
                   src={src}
                   alt="title"

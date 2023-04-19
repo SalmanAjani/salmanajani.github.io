@@ -15,7 +15,7 @@ const About = () => {
         className="text-xl w-full font-contact py-36 px-10 sm:px-32 md:px-20 lg:w-8/12 flex flex-col items-center md:flex-row md:justify-between md:mx-auto md:gap-12"
       >
         {/* Left */}
-        <div>
+        <div className="shadow-2xl rounded-md">
           <img src={hero} alt="hero" />
         </div>
 
