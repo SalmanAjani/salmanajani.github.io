@@ -12,7 +12,6 @@ import express from "../assets/express.png";
 import nextjs from "../assets/nextjs.png";
 import sass from "../assets/sass.png";
 import mui from "../assets/mui.png";
-import figma from "../assets/figma.png";
 import npm from "../assets/npm.png";
 import mysql from "../assets/mysql.png";
 import postgres from "../assets/postgres.png";
@@ -58,23 +57,17 @@ const Skills = () => {
     {
       id: 7,
       src: nextjs,
-      title: "Nextjs",
+      title: "Next.js",
     },
     {
       id: 8,
       src: typescript,
-      title: "Typescript",
+      title: "TypeScript",
     },
-
     {
-      id: 10,
+      id: 9,
       src: mui,
       title: "MaterialUI",
-    },
-    {
-      id: 11,
-      src: figma,
-      title: "Figma",
     },
   ];
 
@@ -129,51 +122,60 @@ const Skills = () => {
       className="w-full bg-gray-100 py-36 text-center font-contact"
     >
       <h2 className="font-bold text-xl mb-10 text-blue-500">SKILLS</h2>
+
       {/* Flex */}
-      <div className="px-8 sm:px-12 md:flex md:justify-center gap-16">
+      <div className="px-8 md:flex md:justify-center gap-16 md:gap-6 xl:gap-8">
         {/* Left Side */}
-        <div className="bg-white mb-12 rounded-md pb-4 md:p-12">
-          <h3 className="text-2xl text-neutral-800 font-bold pt-4 mb-4 md:pt-0">
+        <div className="bg-white mb-12 rounded-md p-2 pb-12 sm:p-4 sm:pb-12 md:p-12 md:w-6/12 xl:w-5/12">
+          <h3 className="text-2xl text-neutral-800 font-bold pt-4 mb-6 md:pt-0">
             Frontend
           </h3>
-          <div className="grid grid-cols-3 gap-y-3 md:gap-x-6">
+          <div className="flex flex-wrap gap-x-3 gap-y-5">
             {fronttech.map(({ id, src, title }) => (
               <div
-                className="p-4 mx-auto xl:shadow-2xl xl:rounded-md xl:mx-0"
+                className="p-4 sm:p-5 mx-auto rounded-md shadow-2xl border-2 w-2/6 sm:w-1/6 md:w-[120px] xl:w-1/5"
                 key={id}
+                data-te-toggle="tooltip"
+                title={title}
               >
                 <img
                   src={src}
                   alt="title"
-                  width={40}
-                  height={40}
+                  width={35}
+                  height={35}
                   className="mx-auto"
                 />
-                <p className="pt-4 text-neutral-600 font-medium">{title}</p>
+                <p className="pt-4 text-neutral-600 font-medium text-[13px] sm:text-[14px]">
+                  {title}
+                </p>
               </div>
             ))}
           </div>
         </div>
 
         {/* Right Side */}
-        <div className="bg-white mb-12 rounded-md pb-4 md:p-12">
-          <h3 className="text-2xl text-neutral-800 font-bold pt-4 mb-4 md:pt-0">
+        <div className="bg-white mb-12 rounded-md p-2 pb-12 sm:p-4 sm:pb-12 md:p-12 md:w-6/12 xl:w-5/12">
+          <h3 className="text-2xl text-neutral-800 font-bold pt-4 mb-6 md:pt-0">
             Backend
           </h3>
-          <div className="grid grid-cols-3 gap-y-3 md:gap-x-6">
+          <div className="flex flex-wrap gap-x-3 gap-y-5">
             {backtech.map(({ id, src, title }) => (
               <div
-                className="p-4 mx-auto xl:shadow-2xl xl:rounded-md xl:mx-0"
+                className="p-4 sm:p-5 mx-auto rounded-md shadow-2xl border-2 w-2/6 sm:w-1/6 md:w-[120px] xl:w-1/5"
                 key={id}
+                data-te-toggle="tooltip"
+                title={title}
               >
                 <img
                   src={src}
                   alt="title"
-                  width={40}
-                  height={40}
+                  width={35}
+                  height={35}
                   className="mx-auto"
                 />
-                <p className="pt-4 text-neutral-600 font-medium">{title}</p>
+                <p className="pt-4 text-neutral-600 font-medium text-[13px] sm:text-[14px]">
+                  {title}
+                </p>
               </div>
             ))}
           </div>

@@ -20,7 +20,7 @@ const About = () => {
         </div>
 
         {/* Right */}
-        <div className="mt-2 md:mt-0 text-center md:w-6/12">
+        <div className="mt-8 md:mt-0 text-center md:w-6/12">
           <h2 className="font-bold text-xl mb-4 text-blue-500 md:text-left">
             ABOUT ME
           </h2>
