@@ -5,6 +5,7 @@ import printshop from "../assets/portfolio/printshop/p1.png";
 import hms from "../assets/portfolio/hms/hms1.png";
 import social from "../assets/portfolio/social/s1.png";
 import blogger from "../assets/portfolio/blogger/b1.png";
+import gymist from "../assets/portfolio/gymist/g1.png";
 
 function Projects() {
   const fullstack = [
@@ -46,6 +47,15 @@ function Projects() {
       techstack:
         "React, Redux Toolkit, Material UI, Nodejs, Expressjs, MongoDB",
     },
+    {
+      id: 5,
+      src: gymist,
+      deployed: "https://gymist.vercel.app/",
+      github: "https://github.com/SalmanAjani/Gymist",
+      title: "Gymist",
+      desc: "Transform yourself today with Gymist - where fitness meets inspiration.",
+      techstack: "React, TypeScript, TailwindCSS",
+    },
   ];
 
   return (
@@ -81,13 +91,13 @@ function Projects() {
               </p>
               <div className="mt-4">
                 <button
-                  className="text-3xl mr-4 p-1 bg-white rounded-md hover:text-blue-500"
+                  className="text-3xl mr-4 p-1 bg-white rounded-md hover:text-blue-500 duration-300"
                   onClick={() => window.open(deployed)}
                 >
                   <BiLink />
                 </button>
                 <button
-                  className="text-3xl p-1 bg-white rounded-md hover:text-blue-500"
+                  className="text-3xl p-1 bg-white rounded-md hover:text-blue-500 duration-300"
                   onClick={() => window.open(github)}
                 >
                   <FaGithub />

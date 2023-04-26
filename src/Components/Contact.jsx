@@ -20,7 +20,7 @@ const Contact = () => {
           <BiMailSend className="mx-auto text-3xl text-red-500" />
           <h3>salmanajani0426@gmail.com</h3>
           <button
-            className="px-4 text-[15px] bg-red-500 text-white rounded-md hover:bg-red-600"
+            className="px-4 text-[15px] bg-red-500 text-white rounded-md hover:bg-red-600 duration-300"
             onClick={() => window.open("mailto:salmanajani0426@gmail.com")}
           >
             Write me
@@ -30,7 +30,7 @@ const Contact = () => {
           <BiMobile className="mx-auto text-3xl text-emerald-700" />
           <h3>+91-7020644638</h3>
           <button
-            className="px-4 text-[15px] bg-emerald-700 text-white rounded-md hover:bg-emerald-800"
+            className="px-4 text-[15px] bg-emerald-700 text-white rounded-md hover:bg-emerald-800 duration-300"
             onClick={() => window.open("tel:7020644638")}
           >
             Call me
@@ -41,7 +41,7 @@ const Contact = () => {
           <FaGithub className="mx-auto text-3xl text-gray-800" />
           <h3>SalmanAjani</h3>
           <button
-            className="px-4 text-[15px] bg-gray-800 text-white rounded-md hover:bg-gray-900"
+            className="px-4 text-[15px] bg-gray-800 text-white rounded-md hover:bg-gray-900 duration-300"
             onClick={() => window.open("https://github.com/SalmanAjani")}
           >
             Checkout
@@ -51,7 +51,7 @@ const Contact = () => {
           <FaLinkedin className="mx-auto text-3xl text-sky-700 " />
           <h3>salmanajani26</h3>
           <button
-            className="px-4 text-[15px] bg-sky-700 text-white rounded-md hover:bg-sky-800"
+            className="px-4 text-[15px] bg-sky-700 text-white rounded-md hover:bg-sky-800 duration-300"
             onClick={() =>
               window.open("https://www.linkedin.com/in/salmanajani26/")
             }
