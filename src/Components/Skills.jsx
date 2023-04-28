@@ -143,7 +143,7 @@ const Skills = () => {
                   alt="title"
                   width={35}
                   height={35}
-                  className="mx-auto"
+                  className="mx-auto hover:animate-wavinghand"
                 />
                 <p className="pt-4 text-neutral-600 font-medium text-[13px] sm:text-[14px]">
                   {title}
@@ -171,7 +171,7 @@ const Skills = () => {
                   alt="title"
                   width={35}
                   height={35}
-                  className="mx-auto"
+                  className="mx-auto hover:animate-wavinghand"
                 />
                 <p className="pt-4 text-neutral-600 font-medium text-[13px] sm:text-[14px]">
                   {title}

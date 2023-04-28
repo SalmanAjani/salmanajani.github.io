@@ -2,6 +2,7 @@
 import hero from "../assets/hero1.png";
 import Top from "./Top";
 import Resume from "../assets/Salman-Ajani-Resume.pdf";
+import Arrow from "../assets/Arrow.png";
 
 const About = () => {
   return (
@@ -12,16 +13,21 @@ const About = () => {
       <div
         name="about"
         id="about"
-        className="text-xl w-full font-contact py-36 px-10 sm:px-32 md:px-20 lg:w-8/12 flex flex-col items-center md:flex-row md:justify-between md:mx-auto md:gap-12"
+        className="text-xl w-full font-contact py-36 px-10 sm:px-32 md:px-20 lg:w-8/12 flex flex-col items-center md:flex-row md:justify-between md:mx-auto md:gap-12 relative"
       >
-        {/* Left */}
-        <div className="shadow-2xl rounded-md">
-          <img src={hero} alt="hero" />
+        {/* BG Image */}
+        <div className="absolute top-[80px] left-5 sm:top-12 sm:left-28 md:top-12 md:left-5 xl:top-6">
+          <img src={Arrow} alt="arrow" className="w-6/12 sm:w-4/5 xl:w-full" />
         </div>
 
-        {/* Right */}
+        {/* Left Side */}
+        <div className="shadow-2xl rounded-md z-10">
+          <img src={hero} alt="hero" className="hover:animate-wavinghand" />
+        </div>
+
+        {/* Right Side*/}
         <div className="mt-8 md:mt-0 text-center md:w-6/12">
-          <h2 className="font-bold text-xl mb-4 text-blue-500 md:text-left">
+          <h2 className="font-bold text-xl mb-3 text-blue-500 md:text-left">
             ABOUT ME
           </h2>
           <p className="text-[16px] text-neutral-600 text-justify">
@@ -33,7 +39,7 @@ const About = () => {
             development tools and techniques. I am also a team player who
             thrives in collaborating with cross-functional teams.
           </p>
-          <div className="text-center md:text-left mt-4">
+          <div className="text-center md:text-left mt-5">
             <a
               download=""
               href={Resume}
