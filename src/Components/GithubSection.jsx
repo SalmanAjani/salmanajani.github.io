@@ -5,7 +5,7 @@ const GithubSection = () => {
   return (
     <div className="bg-gray-100 py-36 font-contact rounded">
       <motion.div
-        className="py-8 mx-3 mb-6 px-2 flex flex-col items-center text-center md:px-16 md:py-24 bg-white rounded-md sm:mx-6 xl:w-7/12 xl:mx-auto xl:mb-8 hover:shadow-2xl"
+        className="py-8 mx-3 mb-6 px-2 flex flex-col items-center text-center md:px-16 md:py-24 bg-white rounded-md sm:mx-6 xl:w-7/12 xl:mx-auto xl:mb-8 hover:shadow-2xl duration-300"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
@@ -18,7 +18,7 @@ const GithubSection = () => {
         <Github />
       </motion.div>
       <motion.div
-        className="py-8 mx-3 px-2 flex flex-col items-center text-center md:px-16 md:py-24 bg-white rounded-md p-4 sm:mx-6 xl:w-7/12 xl:mx-auto hover:shadow-2xl"
+        className="py-8 mx-3 px-2 flex flex-col items-center text-center md:px-16 md:py-24 bg-white rounded-md p-4 sm:mx-6 xl:w-7/12 xl:mx-auto hover:shadow-2xl duration-300"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}

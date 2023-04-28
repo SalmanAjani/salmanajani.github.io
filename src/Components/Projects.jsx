@@ -7,8 +7,6 @@ import social from "../assets/portfolio/social/s1.png";
 import blogger from "../assets/portfolio/blogger/b1.png";
 import gymist from "../assets/portfolio/gymist/g1.png";
 
-import Waves from "../assets/AbstractWaves.png";
-
 function Projects() {
   const fullstack = [
     {
@@ -64,28 +62,14 @@ function Projects() {
     <div
       name="projects"
       id="projects"
-      className="w-full flex flex-col items-center font-contact px-6 pt-36 pb-32 sm:px-10 lg:w-10/12 lg:mx-auto xl:w-8/12 xl:mx-auto relative"
+      className="w-full flex flex-col items-center font-contact px-6 pt-36 pb-32 sm:px-10 lg:w-10/12 lg:mx-auto xl:w-8/12 xl:mx-auto"
     >
-      <div className="absolute top-5 left-12">
-        <img src={Waves} alt="waves" className="w-7/12 sm:w-4/5 xl:9/12" />
-      </div>
-      <div className="absolute bottom-5 left-12">
-        <img src={Waves} alt="waves" className="w-7/12 sm:w-4/5 xl:w-9/12" />
-      </div>
-
-      <div className="absolute top-5 right-0 sm:right-3 xl:right-10">
-        <img src={Waves} alt="waves" className="w-7/12 sm:w-4/5 xl:9/12" />
-      </div>
-      <div className="absolute bottom-5 right-0 sm:right-3 xl:right-10">
-        <img src={Waves} alt="waves" className="w-7/12 sm:w-4/5 xl:9/12" />
-      </div>
-
       <h2 className="font-bold text-xl mb-10 text-blue-500">PROJECTS</h2>
       <div className="sm:grid sm:grid-cols-2 sm:gap-x-6 md:grid-cols-3">
         {fullstack.map(
           ({ id, src, deployed, github, title, desc, techstack }) => (
             <div
-              className="shadow-md p-8 pb-6 bg-gray-100 mb-10 rounded-md h-auto hover:shadow-2xl"
+              className="shadow-md p-8 pb-6 bg-gray-100 mb-10 rounded-md h-auto hover:shadow-2xl duration-300"
               key={id}
             >
               <img

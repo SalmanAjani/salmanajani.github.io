@@ -83,7 +83,7 @@ const Home = () => {
           visible: { opacity: 1, x: 0 },
         }}
       >
-        <div className="bg-neutral-800 rounded-md shadow-2xl">
+        <div className="bg-neutral-800 rounded-md shadow-2xl hover:shadow-black duration-300">
           <img src={heroImg2} alt="hero" width={400} />
         </div>
       </motion.div>

@@ -126,7 +126,7 @@ const Skills = () => {
       {/* Flex */}
       <div className="px-8 md:flex md:justify-center gap-16 md:gap-6 xl:gap-8">
         {/* Left Side */}
-        <div className="bg-white mb-12 rounded-md p-2 pb-12 sm:p-4 sm:pb-12 md:p-12 md:w-6/12 xl:w-5/12">
+        <div className="bg-white mb-12 rounded-md p-2 pb-12 sm:p-4 sm:pb-12 md:p-12 md:w-6/12 xl:w-5/12 hover:shadow-2xl duration-300">
           <h3 className="text-2xl text-neutral-800 font-bold pt-4 mb-6 md:pt-0">
             Frontend
           </h3>
@@ -154,7 +154,7 @@ const Skills = () => {
         </div>
 
         {/* Right Side */}
-        <div className="bg-white mb-12 rounded-md p-2 pb-12 sm:p-4 sm:pb-12 md:p-12 md:w-6/12 xl:w-5/12">
+        <div className="bg-white mb-12 rounded-md p-2 pb-12 sm:p-4 sm:pb-12 md:p-12 md:w-6/12 xl:w-5/12 hover:shadow-2xl duration-300">
           <h3 className="text-2xl text-neutral-800 font-bold pt-4 mb-6 md:pt-0">
             Backend
           </h3>
