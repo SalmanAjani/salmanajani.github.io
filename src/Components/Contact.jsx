@@ -31,8 +31,8 @@ const Contact = () => {
       </div>
 
       {/* Grid */}
-      <div className="px-6 sm:grid sm:grid-cols-2 sm:gap-x-4 leading-10 text-neutral-600 md:w-9/12 md:mx-auto lg:w-6/12">
-        <div className="bg-gray-100 p-12 rounded-md mb-6 shadow-md hover:bg-red-100 duration-300">
+      <div className="px-6 sm:grid sm:grid-cols-2 sm:gap-x-12 leading-10 text-neutral-600 md:w-9/12 md:mx-auto lg:w-7/12">
+        <div className="bg-gray-100 p-12 rounded-md mb-8 shadow-md hover:bg-red-100 duration-300">
           <BiMailSend className="mx-auto text-3xl text-red-500 hover:animate-wavinghand" />
           <h3>salmanajani0426@gmail.com</h3>
           <button
@@ -42,7 +42,7 @@ const Contact = () => {
             Write me
           </button>
         </div>
-        <div className="bg-gray-100 p-12 rounded-md mb-6 shadow-md hover:bg-emerald-100 duration-300">
+        <div className="bg-gray-100 p-12 rounded-md mb-8 shadow-md hover:bg-emerald-100 duration-300">
           <BiMobile className="mx-auto text-3xl text-emerald-700 hover:animate-wavinghand" />
           <h3>+91-7020644638</h3>
           <button
@@ -53,7 +53,7 @@ const Contact = () => {
           </button>
         </div>
 
-        <div className="bg-gray-100 p-12 rounded-md mb-6 shadow-md hover:bg-gray-200 duration-300">
+        <div className="bg-gray-100 p-12 rounded-md mb-8 shadow-md hover:bg-gray-200 duration-300">
           <FaGithub className="mx-auto text-3xl text-gray-800 hover:animate-wavinghand" />
           <h3>SalmanAjani</h3>
           <button
@@ -63,7 +63,7 @@ const Contact = () => {
             Checkout
           </button>
         </div>
-        <div className="bg-gray-100 p-12 rounded-md mb-6 shadow-md hover:bg-sky-100 duration-300">
+        <div className="bg-gray-100 p-12 rounded-md mb-8 shadow-md hover:bg-sky-100 duration-300">
           <FaLinkedin className="mx-auto text-3xl text-sky-700 hover:animate-wavinghand" />
           <h3>salmanajani26</h3>
           <button

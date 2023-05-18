@@ -13,7 +13,7 @@ const About = () => {
       <div
         name="about"
         id="about"
-        className="text-xl w-full font-contact py-36 px-10 sm:px-32 md:px-20 lg:w-8/12 flex flex-col items-center md:flex-row md:justify-between md:mx-auto md:gap-12 relative"
+        className="text-xl w-full font-contact py-36 px-10 sm:px-32 md:px-20 lg:w-10/12 xl:w-8/12 flex flex-col items-center md:flex-row md:justify-between md:mx-auto md:gap-12 relative"
       >
         {/* BG Image */}
         <div className="absolute top-[80px] left-5 sm:top-12 sm:left-28 md:top-12 md:left-5 xl:top-6">
